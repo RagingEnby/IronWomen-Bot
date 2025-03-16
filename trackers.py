@@ -15,7 +15,7 @@ class TrackerCog(commands.Cog):
         self.bot = bot
         
     @tasks.loop(seconds=15)
-    async def profile_tracker_task():
+    async def profile_tracker_task(self):
         profile = await hypixel.get_profile()
         async with aiofiles.open('storage/profile.json', 'w') as file:
             await file.write(json.dumps(profile, indent=2))
