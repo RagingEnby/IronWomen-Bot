@@ -1,0 +1,146 @@
+{
+  "1742067701258": {
+    "amount": 27501.0,
+    "timestamp": 1742067701258,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7aIronWomen"
+  },
+  "1742068229053": {
+    "amount": 296080.0,
+    "timestamp": 1742068229053,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742068267771": {
+    "amount": 1.0,
+    "timestamp": 1742068267771,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a76StarRayys"
+  },
+  "1742068893359": {
+    "amount": 60000.0,
+    "timestamp": 1742068893359,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742070752506": {
+    "amount": 263582.0,
+    "timestamp": 1742070752506,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742121512017": {
+    "amount": 159441.0,
+    "timestamp": 1742121512017,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742121681935": {
+    "amount": 5000.0,
+    "timestamp": 1742121681935,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742123438367": {
+    "amount": 39116.4,
+    "timestamp": 1742123438367,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742123670775": {
+    "amount": 20000.0,
+    "timestamp": 1742123670775,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742123687070": {
+    "amount": 6000.0,
+    "timestamp": 1742123687070,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742149000607": {
+    "amount": 33511.0,
+    "timestamp": 1742149000607,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7aIronWomen"
+  },
+  "1742152274830": {
+    "amount": 46328.75,
+    "timestamp": 1742152274830,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7aIronWomen"
+  },
+  "1742153046902": {
+    "amount": 9000.0,
+    "timestamp": 1742153046902,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742154621566": {
+    "amount": 105350.375,
+    "timestamp": 1742154621566,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742154832672": {
+    "amount": 276725.0,
+    "timestamp": 1742154832672,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742155981607": {
+    "amount": 113042.2,
+    "timestamp": 1742155981607,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7aIronWomen"
+  },
+  "1742156148156": {
+    "amount": 77079.0,
+    "timestamp": 1742156148156,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742156200440": {
+    "amount": 25000.0,
+    "timestamp": 1742156200440,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742156253680": {
+    "amount": 50000.0,
+    "timestamp": 1742156253680,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7aIronWomen"
+  },
+  "1742156658202": {
+    "amount": 20000.0,
+    "timestamp": 1742156658202,
+    "action": "WITHDRAW",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742159103352": {
+    "amount": 125646.0,
+    "timestamp": 1742159103352,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7bMi1ord"
+  },
+  "1742184131740": {
+    "amount": 4415.354499999987,
+    "timestamp": 1742184131740,
+    "action": "DEPOSIT",
+    "initiator_name": "Bank Interest"
+  },
+  "1742230822313": {
+    "amount": 344.0,
+    "timestamp": 1742230822313,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7aIronWomen"
+  },
+  "1742272265528": {
+    "amount": 177140.0,
+    "timestamp": 1742272265528,
+    "action": "DEPOSIT",
+    "initiator_name": "\u00a7bMi1ord"
+  }
+}

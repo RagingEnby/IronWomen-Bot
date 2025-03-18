@@ -6,10 +6,13 @@ import config
 
 
 async def get(endpoint: str, **kwargs) -> dict[str, Any]:
+    params = {"key": config.HYPIXEL_API_KEY}
+    params.update(kwargs)
     response = await asyncreqs.get(
         f"https://api.hypixel.net/v2{endpoint}",
-        params=kwargs
+        params=params
     )
+    print('GET', response.status, endpoint)
     if response.status == 429:
         await asyncio.sleep(10)
         return await get(endpoint, **kwargs)

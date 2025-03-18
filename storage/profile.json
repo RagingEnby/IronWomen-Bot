@@ -1,0 +1,2981 @@
+{
+  "profile_id": "9c2dfcc9-5745-41d3-8932-998813bedbca",
+  "community_upgrades": {
+    "upgrade_states": [],
+    "currently_upgrading": {
+      "upgrade": "coins_allowance",
+      "new_tier": 1,
+      "start_ms": 1742151424873,
+      "who_started": "13c1b67331e14ec485b6f6d3a4271c8b"
+    }
+  },
+  "created_at": 1742064107893,
+  "members": {
+    "12fbcf1f1a264c549c854e4123710279": {
+      "rift": {
+        "village_plaza": {
+          "murder": {},
+          "barry_center": {},
+          "cowboy": {},
+          "barter_bank": {},
+          "lonely": {},
+          "seraphine": {}
+        },
+        "wither_cage": {},
+        "black_lagoon": {},
+        "dead_cats": {},
+        "wizard_tower": {},
+        "enigma": {},
+        "gallery": {},
+        "west_village": {},
+        "wyld_woods": {},
+        "castle": {},
+        "access": {
+          "charge_track_timestamp": 1742229057837
+        },
+        "dreadfarm": {}
+      },
+      "player_data": {
+        "visited_zones": [
+          "royal_mines",
+          "wizard_tower",
+          "pet_care",
+          "desert_settlement",
+          "community_center",
+          "danger",
+          "gold_mine",
+          "zealot_bruiser_hideout",
+          "blacksmith",
+          "bank",
+          "mountain",
+          "floating_islands_1",
+          "tavern",
+          "floating_islands_2",
+          "rampart_quarry",
+          "farm",
+          "enderdragon_boss_room",
+          "the_barn",
+          "auction_house",
+          "farmhouse",
+          "deep_caverns_room_1",
+          "deep_caverns_room_3",
+          "deep_caverns_room_2",
+          "arachnes_sanctuary",
+          "deep_caverns_room_5",
+          "deep_caverns_room_4",
+          "deep_caverns_room_6",
+          "weaponsmith",
+          "thaumaturgist",
+          "lonely_island",
+          "ruins",
+          "enderman_sanctuary",
+          "bazaar_alley",
+          "wilderness",
+          "mushroom_desert",
+          "spiders_den",
+          "unincorporated_territory",
+          "forest",
+          "palace_bridge",
+          "elder_palace",
+          "tailor",
+          "fisherman_hut",
+          "ice_wall",
+          "trade_center",
+          "library",
+          "dwarven_village",
+          "lava_springs",
+          "builders_house",
+          "election_room",
+          "void_slate",
+          "dynamic_portal_island",
+          "village",
+          "deeper_caverns",
+          "arachnes_burrow",
+          "mine",
+          "colosseum",
+          "deep_caverns",
+          "gates_mines",
+          "cliffside_veins",
+          "melancholic_viking",
+          "forge_basin",
+          "shepherds_keep",
+          "divan_gateway",
+          "deeper_caverns_lift"
+        ],
+        "last_death": 181998610,
+        "perks": {},
+        "active_effects": [],
+        "temp_stat_buffs": [],
+        "death_count": 10,
+        "visited_modes": [
+          "combat_3",
+          "hub",
+          "farming_1",
+          "dynamic",
+          "foraging_1",
+          "mining_3",
+          "garden",
+          "mining_1",
+          "combat_1",
+          "mining_2"
+        ],
+        "unlocked_coll_tiers": [
+          "POTATO_ITEM_4",
+          "SLIME_BALL_1",
+          "SLIME_BALL_2",
+          "SPIDER_EYE_1",
+          "SPIDER_EYE_3",
+          "SPIDER_EYE_2",
+          "SPIDER_EYE_4",
+          "ENDER_PEARL_2",
+          "STRING_1",
+          "DIAMOND_-1",
+          "STRING_4",
+          "STRING_3",
+          "STRING_2",
+          "GOLD_INGOT_-1",
+          "STRING_-1",
+          "COAL_1",
+          "COBBLESTONE_-1",
+          "COAL_3",
+          "RAW_CHICKEN_-1",
+          "OBSIDIAN_-1",
+          "DIAMOND_4",
+          "SPIDER_EYE_-1",
+          "DIAMOND_3",
+          "DIAMOND_2",
+          "LEATHER_-1",
+          "DIAMOND_1",
+          "SEEDS_1",
+          "BONE_4",
+          "SEEDS_2",
+          "REDSTONE_2",
+          "ENDER_PEARL_-1",
+          "BONE_3",
+          "SEEDS_3",
+          "SAND_7",
+          "SEEDS_4",
+          "BONE_5",
+          "SEEDS_5",
+          "REDSTONE_5",
+          "IRON_INGOT_2",
+          "SEEDS_6",
+          "BONE_-1",
+          "EMERALD_1",
+          "REDSTONE_6",
+          "BONE_2",
+          "SEEDS_7",
+          "REDSTONE_4",
+          "BONE_1",
+          "OBSIDIAN_3",
+          "SLIME_BALL_-1",
+          "OBSIDIAN_2",
+          "OBSIDIAN_1",
+          "REDSTONE_7",
+          "COAL_-1",
+          "LOG_2",
+          "LOG_1",
+          "COBBLESTONE_5",
+          "COBBLESTONE_6",
+          "COBBLESTONE_3",
+          "LOG_4",
+          "LOG_3",
+          "COBBLESTONE_4",
+          "COBBLESTONE_1",
+          "COBBLESTONE_2",
+          "LEATHER_2",
+          "LEATHER_1",
+          "PORK_-1",
+          "MITHRIL_ORE_-1",
+          "ENDER_STONE_-1",
+          "SEEDS_-1",
+          "LOG_-1",
+          "CARROT_ITEM_4",
+          "EMERALD_-1",
+          "ROTTEN_FLESH_2",
+          "CARROT_ITEM_5",
+          "ROTTEN_FLESH_1",
+          "WHEAT_6",
+          "INK_SACK:4_-1",
+          "INK_SACK:4_4",
+          "WHEAT_7",
+          "WHEAT_4",
+          "INK_SACK:4_3",
+          "WHEAT_5",
+          "INK_SACK:4_2",
+          "WHEAT_2",
+          "INK_SACK:4_1",
+          "WHEAT_3",
+          "WHEAT_1",
+          "WHEAT_8",
+          "GLOWSTONE_DUST_-1",
+          "ENDER_STONE_2",
+          "ENDER_STONE_1",
+          "ENDER_STONE_3",
+          "ENDER_STONE_6",
+          "ENDER_STONE_7",
+          "WHEAT_-1",
+          "FEATHER_-1",
+          "IRON_INGOT_-1",
+          "POTATO_ITEM_-1"
+        ],
+        "crafted_generators": [
+          "COBBLESTONE_1",
+          "CARROT_1",
+          "CARROT_2",
+          "CARROT_3",
+          "POTATO_1",
+          "POTATO_2",
+          "POTATO_3",
+          "COBBLESTONE_4"
+        ]
+      },
+      "events": {
+        "easter": {
+          "rabbit_hitmen": {},
+          "rabbits": {
+            "collected_locations": {
+              "farming_1": [
+                "farming_carrots",
+                "farming_scarecrow"
+              ],
+              "hub": [
+                "hub_farmhouse",
+                "hub_emerald_altar",
+                "hub_minion"
+              ],
+              "mining_1": [
+                "gold_mine_pickaxe",
+                "gold_mine_fire"
+              ],
+              "mining_2": [
+                "deep_caverns_redstone_miner",
+                "deep_caverns_gunpowder_mines"
+              ]
+            },
+            "collected_eggs": {
+              "dinner": 181794556,
+              "breakfast": 181796058,
+              "lunch": 181794787,
+              "brunch": 181793958,
+              "dejeuner": 181793932
+            },
+            "morgan": 1,
+            "bugsy": 1,
+            "domino": 1,
+            "oakley": 1,
+            "audi": 1,
+            "chase": 1,
+            "guinness": 1,
+            "archie": 1,
+            "thalai": 1
+          },
+          "time_tower": {},
+          "shop": {},
+          "employees": {
+            "rabbit_bro": 88,
+            "rabbit_cousin": 64,
+            "rabbit_sis": 60,
+            "rabbit_father": 94,
+            "rabbit_dog": 81,
+            "rabbit_grandma": 86,
+            "rabbit_uncle": 86
+          },
+          "chocolate": 135532,
+          "total_chocolate": 60352367,
+          "chocolate_since_prestige": 60352367,
+          "last_viewed_chocolate_factory": 1742153595158
+        }
+      },
+      "accessory_bag_storage": {
+        "tuning": {
+          "slot_0": {
+            "attack_speed": 0,
+            "critical_chance": 0,
+            "critical_damage": 0,
+            "defense": 0,
+            "health": 0,
+            "intelligence": 0,
+            "strength": 0,
+            "walk_speed": 0
+          }
+        },
+        "highest_magical_power": 21,
+        "selected_power": "warrior"
+      },
+      "leveling": {
+        "completions": {},
+        "experience": 1337,
+        "completed_tasks": [
+          "OBJECTIVE_TALK_TO_LIBRARIAN",
+          "OBJECTIVE_TALK_TO_LAZY_MINER",
+          "OBJECTIVE_EXPLORE_HUB",
+          "KILL_OLD_DRAGON",
+          "DEFEAT_ZOMBIE_SLAYER_ONE",
+          "KILL_WISE_DRAGON",
+          "OBJECTIVE_TALK_TO_BANKER",
+          "DEFEAT_ZOMBIE_SLAYER_TWO",
+          "OBJECTIVE_MINE_COAL",
+          "OBJECTIVE_INCREASE_FARMING_SKILL_5",
+          "OBJECTIVE_TALK_TO_LUMBERJACK"
+        ],
+        "highest_pet_score": 4
+      },
+      "currencies": {
+        "coin_purse": 2249.25
+      },
+      "profile": {
+        "first_join": 1742064108952,
+        "cookie_buff_active": false
+      },
+      "pets_data": {
+        "autopet": {},
+        "pets": [
+          {
+            "uuid": "7c291b0a-97e3-495a-bfb3-cb215537f31f",
+            "uniqueId": "470a316c-a0bb-4f7c-9904-36bcf3ef31d1",
+            "type": "GRIFFIN",
+            "exp": 209402.7358654466,
+            "active": true,
+            "tier": "COMMON",
+            "heldItem": null,
+            "candyUsed": 0,
+            "skin": null
+          },
+          {
+            "uuid": "2f4cc177-d404-4d5a-8b31-374cf76ec432",
+            "uniqueId": "ec18fdb9-f0e7-4054-b530-74efb546c39a",
+            "type": "ENDERMAN",
+            "exp": 0.0,
+            "active": false,
+            "tier": "RARE",
+            "heldItem": null,
+            "candyUsed": 0,
+            "skin": null
+          }
+        ]
+      },
+      "player_id": "12fbcf1f-1a26-4c54-9c85-4e4123710279",
+      "experimentation": {
+        "claimed_retroactive_rng": true,
+        "charge_track_timestamp": 1742240864546,
+        "pairings": {
+          "claims_0": 5,
+          "best_score_0": 4,
+          "claimed": true
+        }
+      },
+      "mining_core": {
+        "nodes": {},
+        "received_free_tier": true,
+        "powder_mithril": 1360,
+        "powder_mithril_total": 1360,
+        "experience": 50.0
+      },
+      "bestiary": {
+        "miscellaneous": {},
+        "kills": {
+          "horseman_horse_100": 1,
+          "last_killed_mob": "old_dragon_100",
+          "zombie_villager_1": 106,
+          "graveyard_zombie_1": 190,
+          "unburried_zombie_30": 34,
+          "lapis_zombie_7": 3,
+          "redstone_pigman_10": 120,
+          "diamond_skeleton_15": 2,
+          "diamond_zombie_15": 3,
+          "emerald_slime_5": 2,
+          "diamond_skeleton_20": 1,
+          "diamond_zombie_20": 9,
+          "ice_walker_45": 410,
+          "unburried_zombie_60": 1,
+          "farming_cow_1": 99,
+          "goblin_weakling_bow_5": 4,
+          "goblin_weakling_melee_5": 5,
+          "random_slime_8": 23,
+          "enderman_42": 120,
+          "splitter_spider_50": 2,
+          "enderman_45": 191,
+          "nest_endermite_50": 58,
+          "enderman_50": 206,
+          "endermite_40": 11,
+          "watcher_55": 105,
+          "zealot_enderman_55": 108,
+          "obsidian_wither_55": 5,
+          "wise_dragon_100": 2,
+          "old_dragon_100": 1
+        },
+        "milestone": {},
+        "deaths": {
+          "zombie_villager_1": 1,
+          "unburried_zombie_30": 1,
+          "ice_walker_45": 2,
+          "nest_endermite_50": 2,
+          "arachne_brood_200": 1,
+          "wise_dragon_100": 1
+        }
+      },
+      "quests": {
+        "harp_quest": {}
+      },
+      "player_stats": {
+        "pets": {
+          "milestone": {
+            "ores_mined": 643.0
+          },
+          "total_exp_gained": 209402.7358654466
+        },
+        "mythos": {},
+        "highest_damage": 10071.855923916537,
+        "highest_critical_damage": 10071.855923916537,
+        "kills": {
+          "total": 1825.0,
+          "rat": 5.0,
+          "zombie_villager_1": 4.0,
+          "graveyard_zombie": 190.0,
+          "zombie_villager": 102.0,
+          "unburried_zombie_30": 14.0,
+          "unknown": 2.0,
+          "unburried_zombie": 20.0,
+          "lapis_zombie": 3.0,
+          "redstone_pigman": 119.0,
+          "redstone_pigman_10": 1.0,
+          "diamond_skeleton": 3.0,
+          "diamond_zombie": 12.0,
+          "emerald_slime": 2.0,
+          "ice_walker": 410.0,
+          "unburried_zombie_60": 1.0,
+          "farming_cow": 99.0,
+          "goblin_weakling_bow": 4.0,
+          "goblin_weakling_melee": 5.0,
+          "random_slime": 23.0,
+          "enderman": 517.0,
+          "splitter_spider": 1.0,
+          "splitter_spider_50": 1.0,
+          "nest_endermite": 58.0,
+          "endermite": 11.0,
+          "watcher": 105.0,
+          "zealot_enderman": 105.0,
+          "obsidian_wither": 5.0,
+          "zealot_enderman_55": 3.0
+        },
+        "deaths": {
+          "total": 10.0,
+          "zombie_villager": 1.0,
+          "unburried_zombie": 1.0,
+          "void": 2.0,
+          "ice_walker": 2.0,
+          "nest_endermite": 2.0,
+          "arachne_brood": 1.0,
+          "wise_dragon": 1.0
+        },
+        "end_island": {
+          "dragon_fight": {
+            "amount_summoned": {},
+            "fastest_kill": {
+              "best": 1000.0,
+              "young": 23500.0,
+              "old": 2000.0,
+              "protector": 1100.0,
+              "strong": 1000.0,
+              "wise": 19750.0
+            },
+            "most_damage": {
+              "best": 1123.1701719612645,
+              "wise": 1123.1701719612645,
+              "old": 397.23969381753443
+            },
+            "summoning_eyes_contributed": {},
+            "highest_rank": {
+              "best": 9.0,
+              "wise": 13.0,
+              "old": 9.0
+            }
+          },
+          "special_zealot_loot_collected": 3.0
+        }
+      },
+      "fairy_soul": {
+        "unspent_souls": 36,
+        "total_collected": 36
+      },
+      "objectives": {
+        "collect_log": {
+          "status": "COMPLETE",
+          "progress": 1,
+          "completed_at": 1742070777130
+        },
+        "talk_to_guide": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "public_island": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742064483564
+        },
+        "tutorial": [
+          "first_join",
+          "recalc_pet_xp_1",
+          "togglerds",
+          "reforge_item",
+          "bag_xp_recheck1",
+          "reach_farming_5",
+          "deeper_kings",
+          "powder_collected_message",
+          "sam_asks_for_help",
+          "agree_to_help_sam",
+          "essence_collected_message"
+        ],
+        "explore_hub": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742274226820
+        },
+        "explore_village": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "hub_talk_to_wizard": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "paint_canvas": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_artist_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_banker": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742068165324
+        },
+        "talk_to_blacksmith": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742064683697
+        },
+        "talk_to_carpenter": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_fairy": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_farmer": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_fisherman_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_librarian": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742064875528
+        },
+        "talk_to_lumberjack": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070767951
+        },
+        "talk_to_pet_collector": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_pet_sitter": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "increase_mining_skill": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742064713856
+        },
+        "mine_coal": {
+          "status": "COMPLETE",
+          "progress": 10,
+          "completed_at": 1742064685510
+        },
+        "reforge_item": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742068936145
+        },
+        "talk_to_blacksmith_2": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742064713856
+        },
+        "warp_gold_mine": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069581575
+        },
+        "enchant_item": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742064899355
+        },
+        "increase_farming_skill_5": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742065117423
+        },
+        "talk_to_farmhand_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_moby_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "collect_farming_resources_2": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_mushroom_desert": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742065192271
+        },
+        "increase_combat_skill_20": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_archaeologist": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_rick": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_shaggy_new_0": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_spider_tamer": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_the_end": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742154023951
+        },
+        "deposit_coins": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742068229058
+        },
+        "talk_to_auction_master": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742068149001
+        },
+        "collect_ingots": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069676095
+        },
+        "find_pickaxe": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069653843
+        },
+        "increase_mining_skill_5": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069581625
+        },
+        "talk_to_lazy_miner": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069623615
+        },
+        "talk_to_telekinesis_applier": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_deep_caverns": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069894024
+        },
+        "collect_lapis": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069931376
+        },
+        "reach_lapis_quarry": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069930171
+        },
+        "reach_pigmens_den": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070000932
+        },
+        "talk_to_lapis_miner": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_lift_operator": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070273118
+        },
+        "collect_redstone": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070013226
+        },
+        "reach_slimehill": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742121568761
+        },
+        "talk_to_redstone_miner": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "chop_tree": {
+          "status": "ACTIVE",
+          "progress": 3,
+          "completed_at": 0
+        },
+        "increase_foraging_skill_5": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_gustave_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "craft_workbench": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "collect_diamond": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742121608727
+        },
+        "collect_emerald": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742121569434
+        },
+        "reach_diamond_reserve": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742121602315
+        },
+        "reach_obsidian_sanctuary": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742122377957
+        },
+        "collect_obsidian": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742159508981
+        },
+        "increase_mining_12": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742122718239
+        },
+        "talk_to_rhys": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742122389470
+        },
+        "hotm_give_materials": {
+          "status": "COMPLETE",
+          "progress": 15,
+          "completed_at": 1742122903897,
+          "started": true,
+          "amount_given": 15
+        },
+        "talk_to_end_dealer": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_guber_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_lone_adventurer_1": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742154934609
+        },
+        "kill_weak_enderman": {
+          "status": "COMPLETE",
+          "progress": 5,
+          "completed_at": 1742156051714
+        },
+        "collect_ender_armor": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_lone_adventurer_2": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156079396
+        },
+        "talk_to_lone_adventurer_3": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156098589
+        },
+        "give_sam_wheat": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_sam": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156863183
+        },
+        "fight_dragon": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742272823548
+        }
+      },
+      "slayer": {
+        "slayer_bosses": {
+          "enderman": {
+            "claimed_levels": {}
+          },
+          "zombie": {
+            "claimed_levels": {
+              "level_1": true,
+              "level_2": true
+            },
+            "boss_kills_tier_0": 1,
+            "boss_attempts_tier_0": 1,
+            "xp": 30,
+            "boss_attempts_tier_1": 1,
+            "boss_kills_tier_1": 1
+          },
+          "spider": {
+            "claimed_levels": {}
+          },
+          "wolf": {
+            "claimed_levels": {}
+          },
+          "vampire": {
+            "claimed_levels": {}
+          },
+          "blaze": {
+            "claimed_levels": {}
+          }
+        }
+      }
+    },
+    "13c1b67331e14ec485b6f6d3a4271c8b": {
+      "player_data": {
+        "visited_zones": [
+          "forest",
+          "pet_care",
+          "desert_settlement",
+          "community_center",
+          "danger",
+          "gold_mine",
+          "spider_mound",
+          "trade_center",
+          "blacksmith",
+          "bank",
+          "mountain",
+          "library",
+          "dwarven_village",
+          "lava_springs",
+          "builders_house",
+          "floating_islands_1",
+          "rampart_quarry",
+          "farm",
+          "hex",
+          "dynamic_portal_island",
+          "the_barn",
+          "village",
+          "deeper_caverns",
+          "arachnes_burrow",
+          "auction_house",
+          "farmhouse",
+          "mine",
+          "deep_caverns",
+          "gates_mines",
+          "deep_caverns_room_1",
+          "deep_caverns_room_3",
+          "deep_caverns_room_2",
+          "arachnes_sanctuary",
+          "deep_caverns_room_5",
+          "deep_caverns_room_4",
+          "deep_caverns_room_6",
+          "weaponsmith",
+          "flower_house",
+          "grandmas_house",
+          "museum",
+          "bazaar_alley",
+          "mushroom_desert",
+          "deeper_caverns_lift",
+          "spiders_den"
+        ],
+        "last_death": 181996040,
+        "perks": {},
+        "active_effects": [],
+        "death_count": 30,
+        "visited_modes": [
+          "hub",
+          "farming_1",
+          "dynamic",
+          "garden",
+          "mining_3",
+          "foraging_1",
+          "mining_1",
+          "mining_2",
+          "combat_1"
+        ],
+        "unlocked_coll_tiers": [
+          "POTATO_ITEM_4",
+          "SLIME_BALL_1",
+          "SLIME_BALL_2",
+          "CACTUS_1",
+          "ENDER_PEARL_2",
+          "ENDER_PEARL_3",
+          "DIAMOND_-1",
+          "ENDER_PEARL_1",
+          "STRING_4",
+          "ENDER_PEARL_4",
+          "POTATO_ITEM_3",
+          "POTATO_ITEM_2",
+          "POTATO_ITEM_1",
+          "GOLD_INGOT_-1",
+          "STRING_-1",
+          "COAL_1",
+          "COAL_2",
+          "COBBLESTONE_-1",
+          "COAL_3",
+          "RAW_CHICKEN_-1",
+          "REDSTONE_-1",
+          "OBSIDIAN_-1",
+          "DIAMOND_4",
+          "SPIDER_EYE_-1",
+          "DIAMOND_3",
+          "DIAMOND_2",
+          "LEATHER_-1",
+          "DIAMOND_1",
+          "SAND_5",
+          "SAND_6",
+          "SAND_3",
+          "SAND_4",
+          "SEEDS_1",
+          "REDSTONE_1",
+          "BONE_4",
+          "SEEDS_2",
+          "REDSTONE_2",
+          "ENDER_PEARL_-1",
+          "BONE_3",
+          "SEEDS_3",
+          "SAND_7",
+          "SEEDS_4",
+          "REDSTONE_5",
+          "IRON_INGOT_2",
+          "IRON_INGOT_1",
+          "BONE_-1",
+          "EMERALD_1",
+          "REDSTONE_6",
+          "REDSTONE_3",
+          "BONE_2",
+          "REDSTONE_4",
+          "BONE_1",
+          "SAND_1",
+          "OBSIDIAN_3",
+          "SAND_2",
+          "SLIME_BALL_-1",
+          "OBSIDIAN_2",
+          "OBSIDIAN_1",
+          "REDSTONE_7",
+          "OBSIDIAN_5",
+          "OBSIDIAN_4",
+          "CACTUS_-1",
+          "CARROT_ITEM_-1",
+          "COAL_-1",
+          "LOG_2",
+          "LOG_1",
+          "COBBLESTONE_5",
+          "COBBLESTONE_6",
+          "COBBLESTONE_3",
+          "LOG_4",
+          "LOG_3",
+          "COBBLESTONE_4",
+          "COBBLESTONE_1",
+          "COBBLESTONE_2",
+          "LEATHER_2",
+          "LEATHER_1",
+          "PORK_-1",
+          "ENDER_STONE_-1",
+          "CARROT_ITEM_1",
+          "SEEDS_-1",
+          "CARROT_ITEM_2",
+          "CARROT_ITEM_3",
+          "LOG_-1",
+          "CARROT_ITEM_4",
+          "ROTTEN_FLESH_3",
+          "EMERALD_-1",
+          "ROTTEN_FLESH_2",
+          "CARROT_ITEM_5",
+          "ROTTEN_FLESH_1",
+          "INK_SACK:4_-1",
+          "INK_SACK:4_4",
+          "WHEAT_7",
+          "WHEAT_4",
+          "INK_SACK:4_3",
+          "WHEAT_5",
+          "INK_SACK:4_2",
+          "WHEAT_2",
+          "INK_SACK:4_1",
+          "WHEAT_3",
+          "WHEAT_1",
+          "SAND_-1",
+          "GLOWSTONE_DUST_-1",
+          "ENDER_STONE_2",
+          "ENDER_STONE_1",
+          "ENDER_STONE_4",
+          "ENDER_STONE_3",
+          "ENDER_STONE_6",
+          "ENDER_STONE_5",
+          "ENDER_STONE_8",
+          "ENDER_STONE_7",
+          "WHEAT_-1",
+          "ROTTEN_FLESH_-1",
+          "FEATHER_-1",
+          "IRON_INGOT_-1",
+          "POTATO_ITEM_-1"
+        ],
+        "crafted_generators": [
+          "COBBLESTONE_1",
+          "COBBLESTONE_2",
+          "COBBLESTONE_3",
+          "COBBLESTONE_5",
+          "COBBLESTONE_6",
+          "REDSTONE_1",
+          "REDSTONE_2",
+          "REDSTONE_3",
+          "REDSTONE_4"
+        ],
+        "experience": {
+          "SKILL_ALCHEMY": 30.0,
+          "SKILL_RUNECRAFTING": 45.1,
+          "SKILL_MINING": 24268.999999999978,
+          "SKILL_FARMING": 136580.69999999998,
+          "SKILL_ENCHANTING": 332310.3372002865,
+          "SKILL_TAMING": 37338.775653955425,
+          "SKILL_FORAGING": 1161.0,
+          "SKILL_SOCIAL": 12.0,
+          "SKILL_CARPENTRY": 4579.725000000012,
+          "SKILL_COMBAT": 20523.499999999985
+        }
+      },
+      "events": {
+        "easter": {
+          "rabbit_hitmen": {},
+          "rabbits": {
+            "collected_locations": {
+              "hub": [
+                "hub_minion"
+              ]
+            },
+            "collected_eggs": {
+              "breakfast": 181790835
+            },
+            "fluffy": 1
+          },
+          "time_tower": {},
+          "shop": {},
+          "employees": {
+            "rabbit_bro": 2
+          },
+          "chocolate": 12,
+          "total_chocolate": 162,
+          "chocolate_since_prestige": 162,
+          "last_viewed_chocolate_factory": 1742067231928
+        }
+      },
+      "garden_player_data": {
+        "copper": 5
+      },
+      "accessory_bag_storage": {
+        "tuning": {},
+        "highest_magical_power": 0
+      },
+      "leveling": {
+        "completions": {},
+        "experience": 1164,
+        "completed_tasks": [
+          "OBJECTIVE_TALK_TO_LIBRARIAN",
+          "OBJECTIVE_TALK_TO_LAZY_MINER",
+          "OBJECTIVE_TALK_TO_BANKER",
+          "OBJECTIVE_GIVE_SAM_COMPOST",
+          "OBJECTIVE_EXPLORE_VILLAGE",
+          "OBJECTIVE_GIVE_SAM_WHEAT",
+          "OBJECTIVE_CLEAN_CROP_PLOT",
+          "OBJECTIVE_INCREASE_FARMING_SKILL_5",
+          "OBJECTIVE_TALK_TO_REDSTONE_MINER_6",
+          "OBJECTIVE_SERVE_FIRST_CUSTOMER"
+        ],
+        "highest_pet_score": 2
+      },
+      "jacobs_contest": {
+        "medals_inv": {},
+        "perks": {},
+        "unique_brackets": {},
+        "contests": {
+          "407:6_18:WHEAT": {
+            "collected": 1982,
+            "claimed_participants": 1778,
+            "claimed_position": 1549,
+            "claimed_rewards": true
+          },
+          "407:8_19:WHEAT": {
+            "collected": 7680
+          },
+          "407:9_3:CARROT_ITEM": {
+            "collected": 3360
+          }
+        },
+        "personal_bests": {
+          "WHEAT": 7680,
+          "CARROT_ITEM": 3360
+        },
+        "talked": true
+      },
+      "currencies": {
+        "coin_purse": 87149.0,
+        "essence": {
+          "WITHER": {},
+          "SPIDER": {},
+          "UNDEAD": {},
+          "DRAGON": {},
+          "GOLD": {
+            "current": 5
+          },
+          "DIAMOND": {},
+          "ICE": {},
+          "CRIMSON": {}
+        }
+      },
+      "profile": {
+        "first_join": 1742065191381,
+        "coop_invitation": {
+          "timestamp": 1742065184633,
+          "invited_by": "12fbcf1f-1a26-4c54-9c85-4e4123710279",
+          "confirmed": true,
+          "confirmed_timestamp": 1742065190884
+        },
+        "bank_account": 215679.17705631827,
+        "cookie_buff_active": false
+      },
+      "pets_data": {
+        "autopet": {},
+        "pets": [
+          {
+            "uuid": "18582fe5-2da7-4c00-8383-675b9135d93f",
+            "uniqueId": "af90fd50-95eb-46d6-af18-c1ddd6e73424",
+            "type": "GRIFFIN",
+            "exp": 149358.44386582173,
+            "active": true,
+            "tier": "COMMON",
+            "heldItem": null,
+            "candyUsed": 0,
+            "skin": null
+          },
+          {
+            "uuid": null,
+            "uniqueId": "871d4605-3c06-4b2a-8be7-c70fde235c0c",
+            "type": "GRANDMA_WOLF",
+            "exp": 0.0,
+            "active": false,
+            "tier": "COMMON",
+            "heldItem": null,
+            "candyUsed": 0,
+            "skin": null
+          }
+        ]
+      },
+      "player_id": "13c1b673-31e1-4ec4-85b6-f6d3a4271c8b",
+      "experimentation": {
+        "claimed_retroactive_rng": true,
+        "charge_track_timestamp": 1742242203358,
+        "pairings": {
+          "claims_0": 4,
+          "best_score_0": 4,
+          "claimed": true
+        }
+      },
+      "mining_core": {
+        "nodes": {
+          "mining_speed": 1
+        },
+        "received_free_tier": true,
+        "powder_mithril": 1,
+        "powder_mithril_total": 1,
+        "daily_ores_mined": 0,
+        "daily_ores_mined_day": 20165,
+        "daily_ores_mined_day_gemstone": 20165,
+        "daily_ores_mined_day_glacite": 20165,
+        "daily_ores_mined_day_mithril_ore": 20165,
+        "daily_ores_mined_gemstone": 0,
+        "daily_ores_mined_glacite": 0,
+        "daily_ores_mined_mithril_ore": 0,
+        "tokens_spent": 1
+      },
+      "bestiary": {
+        "miscellaneous": {},
+        "kills": {
+          "farming_pig_1": 1,
+          "last_killed_mob": "redstone_pigman_10",
+          "farming_chicken_1": 1,
+          "farming_cow_1": 1,
+          "graveyard_zombie_1": 86,
+          "lapis_zombie_7": 11,
+          "diamond_skeleton_15": 4,
+          "diamond_zombie_15": 7,
+          "diamond_zombie_20": 10,
+          "emerald_slime_5": 10,
+          "diamond_skeleton_20": 2,
+          "dasher_spider_4": 44,
+          "spider_jockey_3": 7,
+          "splitter_spider_2": 53,
+          "splitter_spider_silverfish_2": 87,
+          "voracious_spider_10": 73,
+          "weaver_spider_3": 58,
+          "jockey_shot_silverfish_3": 2,
+          "random_slime_8": 2,
+          "dasher_spider_42": 100,
+          "dasher_spider_45": 33,
+          "dasher_spider_50": 18,
+          "jockey_shot_silverfish_42": 15,
+          "respawning_skeleton_2": 15,
+          "spider_jockey_42": 17,
+          "splitter_spider_42": 115,
+          "splitter_spider_45": 15,
+          "splitter_spider_50": 12,
+          "splitter_spider_silverfish_42": 191,
+          "splitter_spider_silverfish_45": 29,
+          "splitter_spider_silverfish_50": 28,
+          "voracious_spider_42": 84,
+          "voracious_spider_45": 28,
+          "voracious_spider_50": 27,
+          "weaver_spider_42": 70,
+          "weaver_spider_45": 24,
+          "weaver_spider_50": 13,
+          "skeleton_4": 3,
+          "spider_4": 2,
+          "witch_4": 1,
+          "pest_cricket_1": 2,
+          "pest_fly_1": 1,
+          "redstone_pigman_10": 1
+        },
+        "milestone": {},
+        "deaths": {
+          "graveyard_zombie_1": 1,
+          "diamond_zombie_20": 2,
+          "dasher_spider_45": 2,
+          "weaver_spider_50": 2,
+          "splitter_spider_50": 1,
+          "voracious_spider_50": 1,
+          "random_slime_8": 2,
+          "splitter_spider_silverfish_42": 2,
+          "voracious_spider_42": 4,
+          "weaver_spider_3": 1,
+          "dasher_spider_42": 3,
+          "splitter_spider_42": 3,
+          "weaver_spider_42": 2,
+          "splitter_spider_2": 2,
+          "voracious_spider_10": 1
+        }
+      },
+      "quests": {
+        "harp_quest": {}
+      },
+      "player_stats": {
+        "pets": {
+          "milestone": {
+            "ores_mined": 1577.0
+          },
+          "total_exp_gained": 149358.44386582173
+        },
+        "mythos": {},
+        "end_island": {
+          "dragon_fight": {
+            "most_damage": {},
+            "amount_summoned": {},
+            "summoning_eyes_contributed": {},
+            "fastest_kill": {}
+          }
+        },
+        "candy_collected": {
+          "green_candy": 1,
+          "spooky_festival_402": {
+            "total": 1,
+            "green_candy": 1
+          },
+          "total": 1
+        },
+        "highest_damage": 2531.151447983766,
+        "highest_critical_damage": 2531.151447983766,
+        "kills": {
+          "total": 1322.0,
+          "farming_pig": 1.0,
+          "farming_chicken": 1.0,
+          "farming_cow": 1.0,
+          "graveyard_zombie": 86.0,
+          "lapis_zombie": 11.0,
+          "diamond_skeleton": 6.0,
+          "diamond_zombie": 16.0,
+          "diamond_zombie_20": 1.0,
+          "emerald_slime": 10.0,
+          "dasher_spider": 182.0,
+          "jockey_skeleton": 19.0,
+          "spider_jockey": 23.0,
+          "splitter_spider": 180.0,
+          "splitter_spider_silverfish": 325.0,
+          "voracious_spider": 196.0,
+          "weaver_spider": 151.0,
+          "jockey_shot_silverfish": 15.0,
+          "random_slime": 2.0,
+          "respawning_skeleton": 15.0,
+          "splitter_spider_50": 2.0,
+          "voracious_spider_50": 1.0,
+          "weaver_spider_45": 5.0,
+          "dasher_spider_42": 8.0,
+          "dasher_spider_45": 4.0,
+          "jockey_shot_silverfish_42": 1.0,
+          "splitter_spider_42": 13.0,
+          "weaver_spider_42": 8.0,
+          "voracious_spider_42": 12.0,
+          "weaver_spider_50": 1.0,
+          "voracious_spider_45": 1.0,
+          "dasher_spider_50": 1.0,
+          "spider_jockey_42": 1.0,
+          "splitter_spider_silverfish_42": 7.0,
+          "jockey_shot_silverfish_3": 1.0,
+          "splitter_spider_silverfish_2": 2.0,
+          "splitter_spider_silverfish_45": 1.0,
+          "voracious_spider_10": 2.0,
+          "skeleton": 3.0,
+          "spider": 2.0,
+          "witch": 1.0,
+          "pest_cricket": 2.0,
+          "pest_fly": 1.0,
+          "redstone_pigman": 1.0
+        },
+        "deaths": {
+          "total": 30.0,
+          "graveyard_zombie": 1.0,
+          "diamond_zombie": 2.0,
+          "dasher_spider": 5.0,
+          "weaver_spider": 5.0,
+          "splitter_spider": 6.0,
+          "voracious_spider": 6.0,
+          "random_slime": 2.0,
+          "splitter_spider_silverfish": 2.0,
+          "void": 1.0
+        },
+        "spooky": {
+          "bats_spawned": {
+            "total": 2.0,
+            "407": 2.0
+          }
+        }
+      },
+      "objectives": {
+        "collect_log": {
+          "status": "COMPLETE",
+          "progress": 1,
+          "completed_at": 1742065596565
+        },
+        "talk_to_guide": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "public_island": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742065688245
+        },
+        "tutorial": [
+          "first_join",
+          "togglemusic",
+          "recalc_pet_xp_1",
+          "bag_xp_recheck1",
+          "togglerds",
+          "reach_farming_5",
+          "sam_asks_for_help",
+          "agree_to_help_sam",
+          "COMPOST_TAKEN",
+          "SAM_SCYTHE",
+          "sam_ask_to_bake_bread",
+          "powder_collected_message"
+        ],
+        "craft_workbench": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "explore_hub": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "explore_village": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742149141775
+        },
+        "hub_talk_to_wizard": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "paint_canvas": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_artist_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_banker": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742067647098
+        },
+        "talk_to_blacksmith": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_carpenter": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742148961718
+        },
+        "talk_to_fairy": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_farmer": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_fisherman_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_librarian": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742066072204
+        },
+        "talk_to_lumberjack": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_pet_collector": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742149266399
+        },
+        "talk_to_pet_sitter": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742149219897
+        },
+        "enchant_item": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742066396748
+        },
+        "collect_farming_resources_2": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "increase_farming_skill_5": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742067238371
+        },
+        "talk_to_farmhand_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_moby_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_mushroom_desert": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742067280907
+        },
+        "deposit_coins": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742067650000
+        },
+        "collect_wool_carpenter": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742149042703
+        },
+        "increase_mining_skill_5": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152461752
+        },
+        "talk_to_lazy_miner": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742166582736
+        },
+        "warp_deep_caverns": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152709133
+        },
+        "collect_lapis": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152746163
+        },
+        "collect_redstone": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152789744
+        },
+        "reach_lapis_quarry": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152728358
+        },
+        "reach_pigmens_den": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152767262
+        },
+        "reach_slimehill": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152813364
+        },
+        "talk_to_lapis_miner": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_lift_operator": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742152950405
+        },
+        "talk_to_redstone_miner": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266046703
+        },
+        "collect_emerald": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "give_sam_wheat": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156221668
+        },
+        "talk_to_sam": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156158648
+        },
+        "purchase_fuel": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156270249
+        },
+        "talk_to_sam_composter": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156240240
+        },
+        "clean_crop_plot": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156621684
+        },
+        "give_sam_compost": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156285532
+        },
+        "reach_garden_plot": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156316752
+        },
+        "refuel_composter": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156272895
+        },
+        "unlock_crop_plot": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156306228
+        },
+        "talk_to_sam_composter_2": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742156844026
+        },
+        "bring_sam_wheat_for_bread": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742232763563
+        },
+        "increase_combat_skill_20": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_archaeologist": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_rick": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_shaggy_new_0": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_spider_tamer": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_the_end": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "collect_ingots": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742166631498
+        },
+        "find_pickaxe": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742166612770
+        },
+        "talk_to_telekinesis_applier": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742166685707
+        },
+        "find_sam_at_stand": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742232781552
+        },
+        "serve_first_customer": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742232804064
+        },
+        "set_up_stand": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742232773880
+        },
+        "increase_redstone_coll_2": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266046703
+        },
+        "talk_to_redstone_miner_2": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266072508
+        },
+        "talk_to_redstone_miner_3": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266089597
+        },
+        "talk_to_redstone_miner_4": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266098399
+        },
+        "talk_to_redstone_miner_5": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266119095
+        },
+        "talk_to_redstone_miner_6": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266262547
+        },
+        "hotm_give_materials": {
+          "status": "COMPLETE",
+          "progress": 15,
+          "completed_at": 1742266565567,
+          "started": true,
+          "amount_given": 15
+        },
+        "increase_mining_12": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266555867
+        },
+        "talk_to_rhys": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742266557818
+        },
+        "increase_foraging_skill_5": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_gustave_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        }
+      },
+      "inventory": {
+        "inv_contents": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+1Xy3IaRxRtBIoEsqVErrjiOIuWynZsS6Pw0PDwKghGFiUeLkB2slI10w1MqZkm8xAmP5FVqlxxFtkkZJWP4BfyB/6QVG4PDwkEtqVyknLKKi2Gubcf99xz7r0TQiiIfEYIIXRnAS0Y1LfkQ4sZ4ZqOL4T8Dmn4UfDAoGyfk4YNXn+F0BI17DYn3SAK5IXFluHtMvqs30v0e8k9i3UMs4FzZsNi1GCmgz4dWDKCc6Y7hjBxzmEtWHQLDDlTtxixmY2dJsN2mzGKRR1tgKkrXAu3DFOuqHVxv0fUu/Aa14WFY2G0Cs9gdR1mw9MG7Pdxv1fv93imVCiUirhU1pZRoEhaDC2BISMIRyG0pj13LJJ2HMuoyaXLMmYUyJTSeYQW0EdZ0iINhuSzBOPmFBgQMjP1poTLt4D8/JSjRc8TYeRDK0dmDaI5ITXOfG+F2w10YwAaOZGoPREdZuFdMHwCMQ3u8ggi17cgYIlwAeAAv4rESRrIVjQa9oAcWvaF5bgmG9hgEUJr/V5Kq9cNHZKhd/FTtDkBe1N08HeuoZ/wLvYQd4Tg3vFeKDaucaGf2DvyVUp73maW3IfhXC6HtsDrsUVMx8ZEHhhL7Kh34SGhN4n0kZlqiRpYTeodC1FDogWmlmhjKlzACbPxnjsyp6lhBN4B22cH9HtxiOfVixd4MlLw2MadpqE3kWSHMQ7MC+b8RVzuGG3OUBDc5AUgJoTwgJzVpmFjA2iJdQJsY9hisKbB6Aa6CYEBq46KQ149yWUO09+MubUO5qxBWsKk+AnASJ6zuTRby+bSsEX2eLhHCF2TbIL4WiAU249CbJwouNuiHy3VB1HCL780j7GSL0B1AdeFfe8kqJpS1bCqxFg0ruzGE3UlmSApJaLuqmFWT9QikXgABR2jxWyHtNrA3h9/Ib/+Povy6/8F5dXLUV6dT/noB8r/05T/Asz7FtEdF0o83M1pWgZ/I/lv7ZfTmepRWcseF3LVg3Iu/85lQChldRohihqJU2U3GY8rqXA4psRUPUljpBalici0DHrfv/xzhgxQYCSDwCXaoH9+s1ufaE57+VLmcITnqteeasAM2xHmfARXMqW9vbxWqZaK2uSVx+K9PVu8nsdVxHr9giqjsqdI0laaxGqbzLZBX8qEvlqMM4aptwhTRrgz7N+xsOSr5OBD4Ha6ZnDD6T4aSBvvCWE7GNyA37yce3xQxZk8EGRSEfWtSDj86uffhovAJInu7W17e8viUiAmwRnYTl45poYl+JASwanomF6dUO23EgIIOAm3eYi99QoouCJcXgOA5dGeaSqxlWelcvZ8Ysui4TJc6QiLzk9sufT4SDv21l4QQ9AeAS21cEb2FNsNk2SMKmoqGlV29VRMqcWSYSUVSzIaS9R1lkj60CoVJnEYPW65NnNbvmn6v1TJH7O6wA9XmQIX0T2A9KnBOphwDnPcoCJVTrp7sqLitiVgKrTtbc8P6hZ3qaxrQy+Dc3sbn0kH/KScykw32gwsUFKhtlpsY9AsWIZDyZG1VbSZuTEC/Takd3xigZmuTPN9z/fB3Axcrxx+62nyuKAVj2YBcjgC5NpFZb0VOIGrjMjrU5X43FALa4g2YAoIoczo64vHulbMHKSLVSi/UIJn1JCpML++RN6vFNrcaX1FquZN4Sx/COK9CmLtPQ7ip1EQC5cIIniVIL7yDPAvNqvwOQx9DHoSOFHoT3jTsVym2AY/ZdamnP9gsHsw8JbfztkOsU5lmew0BebidLCI1OBJVmN0f+QKlwGvJqHyk9uwMPTEbWwz6N4ONodtS3rKxmo4O5twr88nwM0+S5efakVc0Krp/AjmELgMR8H5fW40+EF6pgeYAdRfjqBeuWKVfc0EtjpZS89/wJ3V0QpMFfb8D7izIlrRgDEXprBzf/8jFY+zgt/NLHzt/FVH11yGl69Hf3EG5lMXvAzK/+YF33MaoL8BEo5JtycUAAA="
+        },
+        "ender_chest_contents": {
+          "type": 0,
+          "data": "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"
+        },
+        "bag_contents": {
+          "talisman_bag": {
+            "type": 0,
+            "data": "H4sIAAAAAAAA/+NiYOBkYMzkYmBg4GVAAQAchjy9GgAAAA=="
+          },
+          "quiver": {
+            "type": 0,
+            "data": "H4sIAAAAAAAA/+NiYOBkYMzkYmBgkGbAAwDRO+YPKAAAAA=="
+          }
+        },
+        "inv_armor": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+WUUWvTUBTHT9dO1yo6JkNRkKsITmZc0qRNsreuy7pi18kan0TGTXPSXpYmJbmZ2wcQ/AKDvSiCD/0KPvdr+Db8EIIi3rB2dm4TH/TJt3PuOed/wvn/SAEgDxlWAIDcFEwxN2NmYLoaJgHPFCDLaScDV54HToR0hzo+ZrKQX2curvm0E4uh7wW47LK479P9POQaYYQzkErODQf6KnoYxLhMhgO6qJTgpnjbYAELOqTVR3RHBVkM3B4OyhWH+YzvL5NV7PMuqYaUp62wlEqFiVgeE95lMekzbOPDOJ0+evuGjNaIVH/VZT7CHRGFgcid0bZ67NPAjcXzE7ErbRwODDuVYhx7pE0D4iCJ0AujDrr3YHY4MIcDf6uyZZGVzU27NQO5Ju0hXBMFoYkRWQlDHkMBrlt7PKIVziPmJBzjmfSGMGtXmk+3N+pNa2t7LJAkovCgLHumaiquZJqqIWlqGyWzXdQkhyq6hq6nmrqXgzxnPYw57fUBMgfvi5/vA0zBpVXaox2ENE6devwXnLoKN844VSylF9AnPTo2z44SJKd75YtdvSsC44WoHn08ENHLUWocHR6mqVi+IFxfS3yftJCLiwZJvEysvT5GnBxfWQwvyEvaI5BEVItowFPXy4tFIUkml6adYm70BrfSz99hQtnHXfRJEvhhewfdP7NfXKQk7Lee1aukYdVq9WatlYXpduiHEWS/fRnTkPbVfNoWKqSBnY7Y/Bskao1KtW5b22PFEyQMXaZFVTclShVZ0tDTBBJaSaKe41DTURQ06K9IvPvw+ut5SCz+IyRK8v+NxPwEEtV1q2U/a1Rs6zwo5iegqHaFY+K6HC/EYm6MxU/VEzBkdFzDcFTJkFVT0nSdSk6xbEpFSnVNKRuypypn/hW7u59OgwHwA/4fgnvkBQAA"
+        },
+        "equipment_contents": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+NiYOBkYMzkYmBgYGEAAQCp5xppEQAAAA=="
+        },
+        "personal_vault_contents": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+NiYOBkYMzkYmBgkGbAAwDRO+YPKAAAAA=="
+        },
+        "wardrobe_equipped_slot": 1,
+        "sacks_counts": {},
+        "wardrobe_contents": {
+          "type": 0,
+          "data": "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"
+        }
+      },
+      "collection": {
+        "LOG": 208,
+        "COBBLESTONE": 3552,
+        "SEEDS": 33157,
+        "WHEAT": 22055,
+        "FEATHER": 1,
+        "LEATHER": 1,
+        "PORK": 1,
+        "RAW_CHICKEN": 1,
+        "SAND": 3667,
+        "CACTUS": 1,
+        "ROTTEN_FLESH": 109,
+        "COAL": 595,
+        "INK_SACK:4": 8,
+        "REDSTONE": 8092,
+        "BONE": 172,
+        "DIAMOND": 82,
+        "SLIME_BALL": 22,
+        "CARROT_ITEM": 4433,
+        "SPIDER_EYE": 2317,
+        "STRING": 1720,
+        "POTATO_ITEM": 1056,
+        "IRON_INGOT": 55,
+        "GLOWSTONE_DUST": 1,
+        "MITHRIL_ORE": 2
+      }
+    },
+    "6c77a4b5311544fba9867b9e6798e1f5": {
+      "player_data": {
+        "visited_zones": [
+          "forest",
+          "pet_care",
+          "desert_settlement",
+          "community_center",
+          "tailor",
+          "danger",
+          "gold_mine",
+          "ice_wall",
+          "blacksmith",
+          "dungeon_hub",
+          "bank",
+          "mountain",
+          "library",
+          "dwarven_village",
+          "builders_house",
+          "farm",
+          "hex",
+          "election_room",
+          "dynamic_portal_island",
+          "the_barn",
+          "village",
+          "deeper_caverns",
+          "auction_house",
+          "mine",
+          "deep_caverns",
+          "gates_mines",
+          "cliffside_veins",
+          "deep_caverns_room_1",
+          "deep_caverns_room_3",
+          "deep_caverns_room_2",
+          "deep_caverns_room_5",
+          "deep_caverns_room_4",
+          "deep_caverns_room_6",
+          "weaponsmith",
+          "forge_basin",
+          "grandmas_house",
+          "museum",
+          "ruins",
+          "bazaar_alley",
+          "divan_gateway",
+          "mushroom_desert",
+          "deeper_caverns_lift",
+          "spiders_den"
+        ],
+        "last_death": 181993257,
+        "perks": {},
+        "active_effects": [],
+        "temp_stat_buffs": [],
+        "death_count": 27,
+        "visited_modes": [
+          "dungeon_hub",
+          "hub",
+          "farming_1",
+          "dynamic",
+          "mining_3",
+          "mining_1",
+          "mining_2",
+          "combat_1"
+        ],
+        "unlocked_coll_tiers": [
+          "POTATO_ITEM_4",
+          "SLIME_BALL_1",
+          "SLIME_BALL_2",
+          "SPIDER_EYE_1",
+          "SPIDER_EYE_3",
+          "SPIDER_EYE_2",
+          "SPIDER_EYE_4",
+          "CACTUS_1",
+          "ENDER_PEARL_2",
+          "STRING_1",
+          "ENDER_PEARL_3",
+          "DIAMOND_-1",
+          "ENDER_PEARL_1",
+          "STRING_4",
+          "ENDER_PEARL_4",
+          "STRING_3",
+          "STRING_2",
+          "POTATO_ITEM_3",
+          "POTATO_ITEM_2",
+          "POTATO_ITEM_1",
+          "GOLD_INGOT_-1",
+          "STRING_-1",
+          "COAL_1",
+          "COAL_2",
+          "COBBLESTONE_-1",
+          "COAL_3",
+          "RAW_CHICKEN_-1",
+          "REDSTONE_-1",
+          "OBSIDIAN_-1",
+          "DIAMOND_4",
+          "SPIDER_EYE_-1",
+          "DIAMOND_3",
+          "DIAMOND_2",
+          "LEATHER_-1",
+          "DIAMOND_1",
+          "SAND_5",
+          "SAND_3",
+          "SAND_4",
+          "SEEDS_1",
+          "REDSTONE_1",
+          "BONE_4",
+          "SEEDS_2",
+          "REDSTONE_2",
+          "ENDER_PEARL_-1",
+          "BONE_3",
+          "SEEDS_3",
+          "SAND_7",
+          "SEEDS_4",
+          "SEEDS_5",
+          "REDSTONE_5",
+          "IRON_INGOT_2",
+          "SEEDS_6",
+          "IRON_INGOT_1",
+          "BONE_-1",
+          "EMERALD_1",
+          "REDSTONE_6",
+          "REDSTONE_3",
+          "BONE_2",
+          "SEEDS_7",
+          "REDSTONE_4",
+          "BONE_1",
+          "SAND_1",
+          "OBSIDIAN_3",
+          "SAND_2",
+          "SLIME_BALL_-1",
+          "OBSIDIAN_2",
+          "OBSIDIAN_1",
+          "REDSTONE_7",
+          "OBSIDIAN_5",
+          "OBSIDIAN_4",
+          "CACTUS_-1",
+          "CARROT_ITEM_-1",
+          "COAL_-1",
+          "LOG_1",
+          "COBBLESTONE_5",
+          "COBBLESTONE_6",
+          "COBBLESTONE_3",
+          "LOG_4",
+          "COBBLESTONE_4",
+          "COBBLESTONE_1",
+          "COBBLESTONE_2",
+          "LEATHER_2",
+          "LEATHER_1",
+          "PORK_-1",
+          "ENDER_STONE_-1",
+          "CARROT_ITEM_1",
+          "SEEDS_-1",
+          "CARROT_ITEM_2",
+          "CARROT_ITEM_3",
+          "CARROT_ITEM_4",
+          "ROTTEN_FLESH_3",
+          "EMERALD_-1",
+          "ROTTEN_FLESH_2",
+          "CARROT_ITEM_5",
+          "ROTTEN_FLESH_1",
+          "WHEAT_6",
+          "INK_SACK:4_-1",
+          "WHEAT_7",
+          "WHEAT_4",
+          "WHEAT_5",
+          "INK_SACK:4_2",
+          "WHEAT_2",
+          "INK_SACK:4_1",
+          "WHEAT_3",
+          "WHEAT_1",
+          "SAND_-1",
+          "WHEAT_8",
+          "GLOWSTONE_DUST_-1",
+          "ENDER_STONE_2",
+          "ENDER_STONE_1",
+          "ENDER_STONE_4",
+          "ENDER_STONE_3",
+          "ENDER_STONE_6",
+          "ENDER_STONE_5",
+          "ENDER_STONE_8",
+          "ENDER_STONE_7",
+          "WHEAT_-1",
+          "ROTTEN_FLESH_-1",
+          "FEATHER_-1",
+          "IRON_INGOT_-1",
+          "POTATO_ITEM_-1"
+        ],
+        "crafted_generators": [
+          "COBBLESTONE_1",
+          "SAND_1",
+          "SAND_2",
+          "SAND_3",
+          "SAND_4",
+          "SAND_5",
+          "SAND_6",
+          "SAND_7",
+          "OAK_1",
+          "OAK_2"
+        ],
+        "experience": {
+          "SKILL_RUNECRAFTING": 60.0,
+          "SKILL_MINING": 56027.55000000006,
+          "SKILL_FARMING": 2822.8000000000006,
+          "SKILL_ENCHANTING": 8914.697890961887,
+          "SKILL_TAMING": 7000.363762963676,
+          "SKILL_FORAGING": 2484.0,
+          "SKILL_SOCIAL": 3.25,
+          "SKILL_COMBAT": 9228.0
+        }
+      },
+      "events": {
+        "easter": {
+          "rabbit_hitmen": {},
+          "rabbits": {
+            "collected_locations": {
+              "hub": [
+                "hub_emerald_altar",
+                "hub_bazaar"
+              ],
+              "farming_1": [
+                "farming_carrots"
+              ],
+              "mining_1": [
+                "gold_mine_pickaxe",
+                "gold_mine_fire"
+              ]
+            },
+            "collected_eggs": {
+              "dejeuner": 181794094,
+              "dinner": 181789418,
+              "breakfast": 181793650,
+              "brunch": 181794102
+            },
+            "porsche": 1,
+            "almond_amaretto": 1,
+            "pickles": 1,
+            "buttercream_blossom": 1,
+            "cocoa_comet": 1,
+            "ashes": 1,
+            "scotch": 1,
+            "thalai": 1,
+            "dulce_drizzle": 1,
+            "espresso_eclair": 1,
+            "fudge_fountain": 1,
+            "ginger_glaze": 1,
+            "honey_hazelnut": 1
+          },
+          "time_tower": {},
+          "shop": {},
+          "employees": {
+            "rabbit_bro": 82,
+            "rabbit_cousin": 76,
+            "rabbit_sis": 79,
+            "rabbit_father": 78,
+            "rabbit_grandma": 81,
+            "rabbit_dog": 69,
+            "rabbit_uncle": 75
+          },
+          "chocolate": 408211,
+          "total_chocolate": 38893099,
+          "chocolate_since_prestige": 38893099,
+          "last_viewed_chocolate_factory": 1742174013443,
+          "click_upgrades": 9,
+          "rabbit_barn_capacity_level": 3
+        }
+      },
+      "accessory_bag_storage": {
+        "tuning": {},
+        "highest_magical_power": 3
+      },
+      "leveling": {
+        "completions": {},
+        "experience": 792,
+        "completed_tasks": [
+          "OBJECTIVE_TALK_TO_LIBRARIAN",
+          "OBJECTIVE_TALK_TO_LAZY_MINER",
+          "OBJECTIVE_TALK_TO_BANKER",
+          "OBJECTIVE_GIVE_PICKAXE_LAPIS_MINER",
+          "OBJECTIVE_INCREASE_FARMING_SKILL_5"
+        ],
+        "highest_pet_score": 1
+      },
+      "currencies": {
+        "coin_purse": 12695.0078125,
+        "essence": {
+          "WITHER": {},
+          "SPIDER": {},
+          "UNDEAD": {},
+          "DRAGON": {},
+          "GOLD": {},
+          "DIAMOND": {},
+          "ICE": {},
+          "CRIMSON": {}
+        }
+      },
+      "profile": {
+        "first_join": 1742064204823,
+        "coop_invitation": {
+          "timestamp": 1742064145898,
+          "invited_by": "12fbcf1f-1a26-4c54-9c85-4e4123710279",
+          "confirmed": true,
+          "confirmed_timestamp": 1742064204553
+        },
+        "cookie_buff_active": true
+      },
+      "pets_data": {
+        "autopet": {},
+        "pets": [
+          {
+            "uuid": "a2ff6bf0-4afc-4b2a-8e0d-c9f676b17a18",
+            "uniqueId": "6824b01d-712a-459e-b15d-eb1e3f891794",
+            "type": "GRIFFIN",
+            "exp": 28001.455051854704,
+            "active": true,
+            "tier": "COMMON",
+            "heldItem": null,
+            "candyUsed": 0,
+            "skin": null
+          }
+        ]
+      },
+      "player_id": "6c77a4b5-3115-44fb-a986-7b9e6798e1f5",
+      "experimentation": {
+        "claimed_retroactive_rng": true,
+        "charge_track_timestamp": 1741808893623
+      },
+      "mining_core": {
+        "nodes": {},
+        "received_free_tier": true
+      },
+      "bestiary": {
+        "miscellaneous": {
+          "max_kills_visible": true,
+          "milestones_notifications": false
+        },
+        "kills": {
+          "graveyard_zombie_1": 32,
+          "last_killed_mob": "ice_walker_45",
+          "lapis_zombie_7": 125,
+          "diamond_skeleton_15": 24,
+          "diamond_zombie_15": 36,
+          "emerald_slime_10": 2,
+          "emerald_slime_5": 7,
+          "redstone_pigman_10": 43,
+          "diamond_skeleton_20": 51,
+          "diamond_zombie_20": 136,
+          "ice_walker_45": 12
+        },
+        "milestone": {},
+        "deaths": {
+          "diamond_skeleton_20": 9,
+          "diamond_zombie_20": 9,
+          "ice_walker_45": 3
+        }
+      },
+      "quests": {
+        "harp_quest": {}
+      },
+      "player_stats": {
+        "pets": {
+          "milestone": {
+            "ores_mined": 901.0
+          },
+          "total_exp_gained": 28001.455051854704
+        },
+        "mythos": {},
+        "gifts": {},
+        "highest_damage": 6324.7418181818175,
+        "kills": {
+          "total": 468.0,
+          "graveyard_zombie": 32.0,
+          "lapis_zombie": 125.0,
+          "diamond_skeleton": 73.0,
+          "diamond_zombie": 170.0,
+          "emerald_slime": 9.0,
+          "redstone_pigman": 42.0,
+          "redstone_pigman_10": 1.0,
+          "diamond_skeleton_20": 2.0,
+          "diamond_zombie_20": 2.0,
+          "ice_walker": 12.0
+        },
+        "highest_critical_damage": 6324.7418181818175,
+        "deaths": {
+          "total": 27.0,
+          "void": 4.0,
+          "fire": 2.0,
+          "diamond_skeleton": 9.0,
+          "diamond_zombie": 9.0,
+          "ice_walker": 3.0
+        }
+      },
+      "fairy_soul": {
+        "unspent_souls": 1,
+        "total_collected": 1
+      },
+      "objectives": {
+        "collect_log": {
+          "status": "COMPLETE",
+          "progress": 1,
+          "completed_at": 1742065005368
+        },
+        "talk_to_guide": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742068105438
+        },
+        "public_island": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742064323067
+        },
+        "tutorial": [
+          "first_join",
+          "togglemusic",
+          "recalc_pet_xp_1",
+          "bag_xp_recheck1",
+          "togglerds",
+          "reach_farming_5",
+          "sam_asks_for_help",
+          "agree_to_help_sam",
+          "reforge_item"
+        ],
+        "explore_hub": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "explore_village": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "hub_talk_to_wizard": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "paint_canvas": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_artist_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_banker": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742068244510
+        },
+        "talk_to_blacksmith": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742268676290
+        },
+        "talk_to_carpenter": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_fairy": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_farmer": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_fisherman_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_librarian": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069249374
+        },
+        "talk_to_lumberjack": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_pet_collector": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_pet_sitter": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "collect_farming_resources_2": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "increase_farming_skill_5": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742065095747
+        },
+        "talk_to_farmhand_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_moby_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_mushroom_desert": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742065146689
+        },
+        "craft_workbench": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "deposit_coins": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742068267773
+        },
+        "reach_lapis_quarry": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069980872
+        },
+        "enchant_item": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742149648010
+        },
+        "talk_to_auction_master": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069179117
+        },
+        "collect_ingots": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069810877
+        },
+        "find_pickaxe": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069806222
+        },
+        "increase_mining_skill_5": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069767943
+        },
+        "talk_to_lazy_miner": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069781183
+        },
+        "talk_to_telekinesis_applier": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_deep_caverns": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069934842
+        },
+        "talk_to_lift_operator": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742069975805
+        },
+        "collect_lapis": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070019181
+        },
+        "collect_redstone": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070267717
+        },
+        "increase_lapis_coll_3": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742173522755
+        },
+        "reach_pigmens_den": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070022989
+        },
+        "talk_to_lapis_miner": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070007429
+        },
+        "talk_to_redstone_miner": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742174698508
+        },
+        "collect_diamond": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742149492100
+        },
+        "collect_emerald": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070325138
+        },
+        "reach_diamond_reserve": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070369670
+        },
+        "reach_slimehill": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742070291401
+        },
+        "increase_combat_skill_20": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_archaeologist": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_rick": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_shaggy_new_0": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_spider_tamer": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "warp_the_end": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "reach_obsidian_sanctuary": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742149564076
+        },
+        "collect_obsidian": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742150390083
+        },
+        "hotm_give_materials": {
+          "status": "COMPLETE",
+          "progress": 15,
+          "completed_at": 1742268313822,
+          "started": true,
+          "amount_given": 15
+        },
+        "increase_mining_12": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742150253465
+        },
+        "talk_to_rhys": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742150255419
+        },
+        "craft_lapis_pickaxe": {
+          "status": "COMPLETE",
+          "progress": 1,
+          "completed_at": 1742173561125
+        },
+        "give_pickaxe_lapis_miner": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742173573561
+        },
+        "increase_redstone_coll_2": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742174698509
+        },
+        "talk_to_redstone_miner_2": {
+          "status": "COMPLETE",
+          "progress": 0,
+          "completed_at": 1742174724595
+        },
+        "talk_to_redstone_miner_3": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "talk_to_guildford_1": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "mine_coal": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        }
+      },
+      "inventory": {
+        "inv_contents": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+1Zy47jWBl2TXXPVFf3MFdgYAC5YQa6pzo9thPH8SAknMRJXBUnqdyTBaVj+zh2xZeUL5U474BYjQDBAiREbxBCYsOC1ex4AMQWzY6XQPzHSXXXJdVTQLGj1d1xfP7b+a/fOdmlqHvUlr1LUdQHr1Cv2MbW21vU3ZIfe9HWLrUdock96g72dIsif7ao+z1PCzCaIs3BW9vUvZpt4IqDJiGs/nOXes2ww5mDEmCq+wHegbdfpd757FmhSJhsb0K3/DkOaB4W3vrsmVBGLprgT+jPnul7WYZ6CK9U2yN0nRnGBllAe1meh0/x0R7HPKa+9oKk4gdR7OE1EQci3wAy2TRt3QaTE7pPPQbqaoC8KEyJWJaBz/znf/qUPq8GiJ4Sc0R5McMB4cW0oijU3gtuRPizwlP+Q3gQdAsRGtMPaNfXYNUzqG/De9hySEc+bQT+jDb8GJxE4+cyn1JfAh1rq1MFT86blwcPfP6zn9EXdwcUT+i5ZUMEPoRn29PBkyGoSfw4oM8bEjuRPXMwdQ/IiAHhU+J5seNiWACBXT/WLVpJxUhx5LsosnXkOAkdEpKQ1gJ/ij1ac3x9GlLvp9pgM5GF7WBFgw2iyn26ip6ooomHQQhd9L04pB4Bh4wCbx201FMuuIQGt8IWQLSbbo2wfwVoPnvm9Bqlpqo2G3RLKR1IQ3mHutNALiY2oufSKwHSozgA5aodWYHt0C1bn6IFpnapN+RFFCApigJbiyMc7lA7rm/Ypo0DeFpL2CGJTX2t0pZK3V5bLh+pSrfWVupHa6271AOS4hAHF0Mstqld/DyJwNa729Rr5ioa8G17m/pSuPbpUUR8SgqD8DwPNKGiYCtxDGo/YDSTZ3URZUxN4zM5TRcyKMfrGV0QGUbLY5FhuTvUvch2cRghdwbSPn2m/PyvFPUK9eqqQCjyTIrz/UvF+Z8U5O6VyuMYeP0RZKCk2Y4dJZ+sygLC6ocRDSSQhU5bqda6dKkOLruYt+YeyzCf//K3ayZYIulIyoUJ08oi9a8iD9ElEEc0ZnmGehtelnzfMfy5l1YwTywm3LDQteyQtiPs0jqChMR0gEHmBBsPSZkVwJqP6JQ/A3XW8WNHA58Q1ekSkW3Cwzq1OoNmu3yWWFCBZtufxJjuzP3A2JhBJFnut5vVnnx0xruKpFZg8obOGxnRNFAmlzP1jJjTzEwWApllDIETcfZyJH9BH/5xUyS3biGSb2xqrdkNrRUC/NWNrZUnkf/mhchHPqm0lh9BKdjIoSkmjcn5PsUylzvoWdTxKQ4S6l34Bjmx7iSk6rHx9Cy2j1S0oPc4/oqMx9Q2UKQNHv4WV7wq4U1tFQvUe6ulK9tgbpQ5X9BywGjUCnzXDlNfXtthtqn3ZmdkR7MV2VEaOBIobZU+b7XaTVXpKI3q0Qs1qyRCBmK5AsNnRJTDmZyQZzNINEV4YjkNc5rBMeaVJPreN369KYm+dcuzemdza7gyVsmsU55PIsuf0ycxeAJGSTqVIqjrVNLKLes8eHqjKL15oXbPxed1WKhCv4AxIl3T+onnd6rNevnoBk39RYNGOUbQchzOFES2kMmxeSZTMEwhgwuIxYUCW+B440pEfjS8syki9285Iu9sgkmr6VuxYbRK4QzrEYAJKkNiMvHAq2tsgD3s2vBl3Y1zYQolDIwcyFzqu2kkUD6d0r65YjFSPTTMMTrEuu9B1UIvFas2eJE+sB0HFpR+iotehH/NRARHtJakBfk09+G6JVAfwCdGgDxAqg6RoEEZJpGjLcJhAb5AUWr9KncQ5EFEWwhQleafYmIYHc8IqgLBHPNhOlJ2U2ADe6Vfak3KJAwANeAg3T71yaqFdKbYwZHvrXwC/419VwNnpV9ROkrWr6ATTCCBSGd6k2R0ur/82gwqtbsMutb4kmHSfa+NWKk/J5r6/kr9ZdFPLpl5ZsJ5M29WPi8ZfVDFZs8DxxhfMPse9BplWSqvht+VMrobEr+vYNF9E3LwCKU5SEpgm3owIblyNE1zBV7deVFmms6AY2Bc8jkTGl8hZ2QQwkImmzNNRtQMRte1K2V2/Jd/bCqzyS1Mzy0yPc87qyZL7c6ZtwBFmx3I0CC81k+vPudYbVAX8gXdgD6ia4ARcoVsLqNxgpGBbefzWgHrHCtc2aCudTdt0D/b4A9XG7zRjrapL68SpOSD+/XI9j1agTSBpQfnt3o+I9p+BJOerjg4tK7PiHaz25UbR5W63KltMvcbt9z2XrvS9lj+VgfR5dA3+3L9zC1vvpg0HQtakHOtX3bTYdNpSeV/Y9wweSGLuYKYgaQg5wEWEwDAZZBZyEPmFDSDZ6+kyUc/3VgHP7nk9xs5927a/Ps2ntNw/KPPmn9nmqSgiwZ4M4GDbPgkpYMTpxMbBBOtqaC0wyf0ixQDOpJ2bazbMxyuehc59j1czSlcciAipBf6M+w9PHMyHC/Rc40q9mLS2x6ltI+v9ffrnYNRsd4sHRypcqN3k/l7O8kHMPkd0o6jAHuTyDoHjehzU/fSwM3evGu/ewmaXujbkI4IDHZTzPvSxv16pS6pBHNePLZwhs7m8jx0WlPMZnI6p2c0XRQzXFYTsZATCkjPX064X/+++YdN/v3KLRf6lzcdYXKbb4fe23w7BCvXXgptRK//vxT6X10K/deHMIAvqGwjF6DnSy95SLa/UVYkEFG++S3Oxnubi1c7197i6IKZZ3nDhKrJw9lfgPrRTEPIFFjEGSZgl6zBXy6iX/F/ozYUEXXnrIhevZ3hfhH0pQ3y/H1Hydcg50LAkdc7836pWSzCdO82G/JFk6/+WXWCH3/h6NntTGPHac49HIASBZwoCppR0NlsJl/QcpksC1NP5GESanrBYHAeZcWcuUW9aSUze4Gdlj+LHQT5BRp24WgOgYmgv96jdiI4QMRQVuTaemuHutexJx4ib1753bQ6Zg7x3tJYOqOYd+28wZjOxEeSEWqJMhYZuZ8b+h5TrsiH0aIdB86yV9KOh50OWzkZV9reXG3L1XHruD3sYXdc4oaDwMWzQzXpSvZhdzRn6/6ipmAhFktBeNqxZqXDmsYd+8ucvh+bUzbsGfM24xqFUZnp6H6U90t8i90fJBOz28sLw4GhukrVmpxIx0l2NLdbE90vGzlo743a8Ug2/A7ucW43Cu1+RVrmZ4OiGout2nIQWcKcK43MoIYaaovXT7P5JFeXuofdxWxPmtdV62QmdO3lkB+P5qNl2fN0UZrvSaNeuTtq54vodNFaBva0AocMJltGfHU8Ox1WlSRJCgLTj4qWuRjWGdzJV+xOGMl7TTPqJ4uAQQIzwKZgRONTQ8e1hFUreGl2u+Nex9033FmFied6mReqy+NyH7CDy3BOt9cwx53Tj22tLIxqw6gSVKrNE6t2gu1SdLIshkw1GqnSvhaemKd2szRD5TDb1Q8ZWeWUqqZ6jXEnmUudw+nS+vi0VZzqIncYVbuNxPzYVzR31LJmMrL6yqDCt05ltMzqbq+a9buD5hQfxOOTcHmQry1q/WKp7/hti9NlnO1bFWtgVNxj24utj2sdxTfYqjk43FeP94pTXzhoDXTr5JRjqz7vL5fucFIvTqXSPKkp2YOG2dbLTYMty35tNpJyrllsL7h4yMnxTG/6npRkQyaKJlk+5OelpThY6qpsR5Ni+aDidiLTrzX5mViYeXsVb6rv9aTJD3aou33kxHjrN3juT5TSPoMGrKNn25Y2lGyl7E9USDi1rCaNY5lpLGW+0ZkfKCXJ1mv7p2PXCcc9Z6rYUl4pKYvG0nLV7v50NFCXje4hMz5uW6NjGd5Pk3FZZ9XydDni9t1RooQlW5ooXjHRuPFMq/abI9C7krO/RIOFo3nt6XjYToxBA2wSY8Ve6+UcT3MrjDHcd3puf2EMnGQ8OExtNWr77Hhtn1Ht54xaPxkP1XRttT/Q6TTqnV7u4jtCP9wP1/p9o9aeN+3C6TkZsTZw4vGgkYwGY6bu8o5REpnx0ErtqC8bllrt5ZrdCa+W9fn4WGLVbt9Wl/1pw5U5danD/p3jRrXvjqu9RaM75VT416weLtXB2FXLStIYqGyzewh+dpzxsc4Aj536qFQUyad5OBPTq/MNjfkBQWiF9mrEkftTaLMPz1o1nPM9goZo26PPSCTv1HaAkQx6aTZzCGaEeUp+42pj2wMifXWjuh6b6W8n1NcJxEjlweLcjiwaBQCz1xjzO1eYHwF4qOMJ9gwUJPD98SdkTghlbGIvXOOjwvriH8A7nJsITiG/u6xBEAH6dB3D+YfuAy4BKoLoAYSJ5NcAqS3TbbnSbFdlOp0a5w6VYhsFmF7P8ZccKkHG0XqIP5+zWMDIKOSFjG6IeiaXN1FGy+twWGI1NisKHMNkr5yOngl//vv5obW9HlT/AsQC+zLdHAAA"
+        },
+        "ender_chest_contents": {
+          "type": 0,
+          "data": "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"
+        },
+        "backpack_icons": {},
+        "bag_contents": {
+          "talisman_bag": {
+            "type": 0,
+            "data": "H4sIAAAAAAAA/21Vy5KjyBWlqrs9VbXxREx41lo4vJFrxEtCLGaBBEggHpIA8dhMJJCCRDwkHkLwD17OZuy124v5iv6SCX+Iw6i6FrbDRHDJvOfkPScziJsvGPaMPaAXDMP+8Ig9ovDhLw/Yp2XR5PXDC/ahBtEH7HmNQiimIKoG1r9esBfj1KSp3uawfMIepRD7I0nSczagj69sQM5eKXxGvfozCF+DEOAhnEFA48ED9m3cndENptvi3KSghuGg8LItizMsawSrZ+yphre6KWF1t/PwhD0bKMrBPfP4a7oWDha1q29GaNRb2633HXlWZH98lUJBtffdeAW0FX0gJ7KBu+55KWxbcES8b6aVZbkSCXX5pJySKcFvcEsCkJ+rABRWc6sWK6fbK+xyKh7Gc5ms42abGOnMV9sJHwTJRA0aQup6z80iIkgFR3J2Bc3HO1nc28sd4NYATibCjD5tJsFM0m1603PlQrlGCS3yFRovSHN60aVwo1jMhKQufNBvFPxCHdqjeZno6VgM6V657lNhdowyY2pvgN0AjtA27Yw9Hm7jk3Eq+d45CO0s6PV5v9gudGu12eVVtWXGxhUx8Ool82t37TPFCVR/vR/qBGvD4xfIkmnO2ZyEm3HYLhgNkUkuKjNJ3SwyurmESZpf2F5UWmeXtMoU7GjVwk/ZNojBlAiPi146bavL0mdC/CgrkLpk+4DyJ02xXnCaT1FbY3VlaWApPO6Q+pqsOKLjxMmVRPs54yzHBzItSBkJNFknk6YDfMAUONQPizILT7sjbukcuhGCFExpu79sNxnITqpk75hx6K+2XTC/xHGxBnKa5bOzUEr0jj1fDlfKVtntrl/c1CggputTWNIEg6+vcy+/2CYbOyHHMo3o5Ao9YYMJw03aHvfdfSxdUKncmgk4R30rdp1DVnZ23E5nQGqcltyN+WxLn2Nh+GeTlbWx/BkhluiaLtkbJzN5ua6kipzNqcJwE0dG4lVtViw89kKhalU8T/Ox+uMT9ukA0gY+/AbbIpKWMg5sIg2ofew7HJL4IlJNt9VMAVdNi1DNHa4v24205FCwlq9ellaelZ4kxM2GtSeddwktSZHWR4TOW7i+sijdlFM3kxONV0l15d605NRqnVQtERdJ+aLzSe/srw66O+i+19m6pNi4No4U7s1TD+ywcZ09EWQHw3NEAjhy6i2lSEcLPMgP6TsP95wYDwcs6N4w5k1j8GrhtWyi/8rd+UO99m2PUjasW3MzpWP/o8a0BvY0dSk59vJd42cHXKH2KVzffVhX195Rrqm2bh913kqOddslXDNEnu2dtExEbi+QKh9NPVOaqolFeqbVeSZHesnA5Q+ZmuxI1RYTjw9jzbSogY+7xvu5fPVXe84+9lbiPf8/3oc3I67e6lC9n1nvr9Jaiop3fMF+5X79HndnduhTL9g3IarOKeiesY9KUcKnIfkJ++HLZ0bKgxKCClajrmjK0ZfPx3/+7e8j4wxhOEwYvxsiGBP4MMbuoY1RCkcxTMMRykd1DAfcF0GZDdif72NzSC1Amd/n2HiIXz5DtanisiiyEQ+roZG+UUF+F/BXoAzhnfzDYOn7Qf7L53Spq6qujbjlUjAMfe8+YR81kEHsuwG+S6E8GpkgRVUG8mFvvxdudQm4ui6R39SwerrfEdi3IrdXJW31k8kpkqFy2lCladD9JmCZkAx8/BUSNPlKM5T/Co5++BpMKZYMw4AOSfgRe65RBqsaZOehz//81z/98g8Me8R+x4MMRBD7gP3f598vspCEqwYAAA=="
+          },
+          "quiver": {
+            "type": 0,
+            "data": "H4sIAAAAAAAA/+NiYOBkYMzkYmBgkGbAAwDRO+YPKAAAAA=="
+          }
+        },
+        "inv_armor": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/9XUTW7TQBQH8Oc2hSYsEFVLqdgYCVZlkD/GX92lqdtUcpKqSRes0Nh+di1iO7InolyAG3AAhCDiBOxzAk5EmQT1AzfdIHXRjW35zfxn9H6aaQDUQUoaAFBbgqUklIgEK618nHGpAcucxRI8Osn8Atl75g9RWoZ6Owlxf8jiUkz63YCHYVKOhuxjHWpeXuAqzCLXphNrDyPMStyRpxO2rSmwKf51kizJYrk/QgwvC8+uCvt5wcfZxRwR9VzUphPzKMEA5d08G5c7cofFGfIkgO150XJZkc0nGMor8bZSsQ3ZPRvJH04xk9N58huRJc+H24PTpJQTjqkcsEz2US4wyosYwxewLlKmk+FJt9XrdHpdebfXG/SXYSXIh3khEs5XodZlKc4HemwkgpqFWE7sLOclNOCxe8YL1uS8SPwxx3J11lN44jWPDvvvmsed3vG7eabIGY9F5aWvhYxqtkKYbduEGjQiTmT6xA6ZqSkOQ+ZoNajzJMWSs3QEIH3+8s3RAZbgwR5LWYww+57Rvb4bOt24D3SbFTrPPTg47B4s1Nus6HkYx2Kh2wHXrwNeJF8aIg1MZlpIFCNUCTXRJo7uGES1Q6SmYuvUsG8Yft9/u8hw+24M6b04flsVw1bb7Q+OvObAXaS4VVFsnYr2ilZwvNXx6XXHq/QrSaZaqhpExFIji1Dbp8RRolA8KNMVPbQCQ7kh+fX81wJJ+FGR/O+b814cv40KXdv1Ou7ggmqjQtXGYYr8Vqa160yXSX+JNDPSHUdnxLfFXUltqhHH8QNC/SDUdTNS1NC6edh+fvqXCP4AaJxbv/kGAAA="
+        },
+        "equipment_contents": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+NiYOBkYMzkYmBgYGEAAQCp5xppEQAAAA=="
+        },
+        "personal_vault_contents": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+NiYOBkYMzkYmBgkGbAAwDRO+YPKAAAAA=="
+        },
+        "wardrobe_equipped_slot": 1,
+        "sacks_counts": {},
+        "wardrobe_contents": {
+          "type": 0,
+          "data": "H4sIAAAAAAAA/+3US2/TQBAA4HEf0ITSB1WFBBdDkZBAC34/yilNTVNI06oJXKt1PE6s+hHZa0H/ASdunKASnPI/8lO48SNArNs0jRAt4dJT9xLHszszmf2UMkAJhKAMADWYgqnAEwwBZqtJHjOhDNOMdkowg3G7C8US4Nab2E2RHlI3RGEaSrXAw5ch7WQ8+qsMN70g64X0iB+qJynO8be34c6gb26ij3GG6+KgT5+aEtzl73aCOIg7YrOH6J0GZIkfWBz07b00YdhmQRKLb2GN791Kacyyk02KVHx8P/4gDpPy8DN+7t6gb1TcIAzY0ToP9VhXrCaUFSXgedFCkvOmM5F1g0zsBdjGx9kfmfhX8103CBHu8ydefNB3h11uZyGNvWxYq9g46FutIlXAMBLbNBZdFFP0k7SD3gN4yMODfviE77SqCUl6YjPJQ5cP1hOHIVjmv5Q/7Ff2HbHm1Hec1hzMNGiEJzPghTEVaxhGyKAMi857ltIKY2ng5gyzueK2YLlVabw+2NluOPsHpynKMF/cFx9XhHxk01DujYbJO58FXiPP+dFHqtE2FN1VialblGiSLhPX9lRCDddSZERf9akAC14SU4beQZRnmEfCDJRYEGHGaNTjIj59O/44D9zOjU0a0Q7C+Tr1ZF57uipPq2OeqjWn2dqrV1rOmamVkalql18fHyvDC12tjrk6TzW5LUW1dVmXTGIapk0017QItW2VSIaOiutriqTIE9j6svbjMlvWta2rsrUyZqvubG1tN7aaZ7KWR7Lq2OnwDrILXa2MuTpLM7kq2dYodVUkhq+oRFN0n1CqS8TTLM1DQ5Ukakyg6vP64WWq7GtVV6VqaUzVxu5ua0RqYURqI0nYxZ6WxjydJPifvyjJlWRbIbonGYQL0ojreSbxJKpavm7IbcX9N6avL179/DumSdZv4poBDIAJAAA="
+        }
+      },
+      "collection": {
+        "WHEAT": 478,
+        "SEEDS": 794,
+        "COBBLESTONE": 2631,
+        "COAL": 33,
+        "LOG": 435,
+        "CACTUS": 11,
+        "CARROT_ITEM": 474,
+        "SAND": 11118,
+        "ROTTEN_FLESH": 306,
+        "GOLD_INGOT": 7,
+        "IRON_INGOT": 15,
+        "INK_SACK:4": 2264,
+        "BONE": 205,
+        "EMERALD": 58,
+        "REDSTONE": 1902,
+        "SLIME_BALL": 7,
+        "DIAMOND": 1686,
+        "OBSIDIAN": 6,
+        "POTATO_ITEM": 384
+      }
+    },
+    "7ca5d13bc26943db9dd948e03538ae15": {
+      "player_data": {
+        "visited_zones": [
+          "dynamic_portal_island"
+        ],
+        "last_death": 181795980,
+        "perks": {},
+        "active_effects": [],
+        "death_count": 1,
+        "visited_modes": [
+          "dynamic"
+        ],
+        "unlocked_coll_tiers": [
+          "CARROT_ITEM_-1",
+          "COAL_-1",
+          "LOG_2",
+          "LOG_1",
+          "COBBLESTONE_3",
+          "LOG_3",
+          "COBBLESTONE_1",
+          "COBBLESTONE_2",
+          "CACTUS_1",
+          "PORK_-1",
+          "CARROT_ITEM_1",
+          "SEEDS_-1",
+          "CARROT_ITEM_2",
+          "CARROT_ITEM_3",
+          "LOG_-1",
+          "CARROT_ITEM_4",
+          "ROTTEN_FLESH_3",
+          "EMERALD_-1",
+          "ROTTEN_FLESH_2",
+          "ROTTEN_FLESH_1",
+          "INK_SACK:4_-1",
+          "WHEAT_6",
+          "POTATO_ITEM_3",
+          "POTATO_ITEM_2",
+          "WHEAT_4",
+          "POTATO_ITEM_1",
+          "WHEAT_5",
+          "WHEAT_2",
+          "INK_SACK:4_1",
+          "WHEAT_3",
+          "WHEAT_1",
+          "GOLD_INGOT_-1",
+          "SAND_-1",
+          "COAL_1",
+          "COAL_2",
+          "COBBLESTONE_-1",
+          "REDSTONE_-1",
+          "RAW_CHICKEN_-1",
+          "WHEAT_-1",
+          "LEATHER_-1",
+          "SAND_5",
+          "SAND_6",
+          "ROTTEN_FLESH_-1",
+          "SAND_3",
+          "SAND_4",
+          "SEEDS_1",
+          "REDSTONE_1",
+          "SEEDS_2",
+          "REDSTONE_2",
+          "SEEDS_3",
+          "SAND_7",
+          "SEEDS_4",
+          "SEEDS_5",
+          "SEEDS_6",
+          "IRON_INGOT_1",
+          "BONE_-1",
+          "EMERALD_1",
+          "REDSTONE_3",
+          "REDSTONE_4",
+          "SAND_1",
+          "SLIME_BALL_-1",
+          "SAND_2",
+          "FEATHER_-1",
+          "IRON_INGOT_-1",
+          "CACTUS_-1",
+          "POTATO_ITEM_-1"
+        ]
+      },
+      "events": {
+        "easter": {
+          "rabbit_hitmen": {},
+          "rabbits": {
+            "collected_locations": {},
+            "collected_eggs": {}
+          },
+          "time_tower": {},
+          "shop": {},
+          "employees": {},
+          "chocolate": 0,
+          "total_chocolate": 0,
+          "chocolate_since_prestige": 0
+        }
+      },
+      "accessory_bag_storage": {
+        "tuning": {},
+        "highest_magical_power": 0
+      },
+      "leveling": {
+        "completions": {},
+        "experience": 214
+      },
+      "currencies": {
+        "coin_purse": 450.0
+      },
+      "profile": {
+        "first_join": 1742064135780,
+        "coop_invitation": {
+          "timestamp": 1742064129887,
+          "invited_by": "12fbcf1f-1a26-4c54-9c85-4e4123710279",
+          "confirmed": true,
+          "confirmed_timestamp": 1742064135335
+        },
+        "cookie_buff_active": false
+      },
+      "pets_data": {
+        "autopet": {},
+        "pets": []
+      },
+      "player_id": "7ca5d13b-c269-43db-9dd9-48e03538ae15",
+      "experimentation": {
+        "claimed_retroactive_rng": true,
+        "charge_track_timestamp": 1741812457180
+      },
+      "quests": {
+        "harp_quest": {}
+      },
+      "player_stats": {
+        "pets": {
+          "milestone": {}
+        },
+        "mythos": {},
+        "deaths": {
+          "total": 1.0,
+          "void": 1.0
+        }
+      },
+      "objectives": {
+        "collect_log": {
+          "status": "COMPLETE",
+          "progress": 1,
+          "completed_at": 1742065074327
+        },
+        "talk_to_guide": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "public_island": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        },
+        "tutorial": [
+          "first_join",
+          "bag_xp_recheck1"
+        ],
+        "craft_workbench": {
+          "status": "ACTIVE",
+          "progress": 0,
+          "completed_at": 0
+        }
+      }
+    }
+  },
+  "game_mode": "ironman",
+  "banking": {
+    "balance": 402667.0795,
+    "transactions": [
+      {
+        "amount": 27501.0,
+        "timestamp": 1742067701258,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7aIronWomen"
+      },
+      {
+        "amount": 296080.0,
+        "timestamp": 1742068229053,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 1.0,
+        "timestamp": 1742068267771,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a76StarRayys"
+      },
+      {
+        "amount": 60000.0,
+        "timestamp": 1742068893359,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 263582.0,
+        "timestamp": 1742070752506,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 159441.0,
+        "timestamp": 1742121512017,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 5000.0,
+        "timestamp": 1742121681935,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 39116.4,
+        "timestamp": 1742123438367,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 20000.0,
+        "timestamp": 1742123670775,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 6000.0,
+        "timestamp": 1742123687070,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 33511.0,
+        "timestamp": 1742149000607,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7aIronWomen"
+      },
+      {
+        "amount": 46328.75,
+        "timestamp": 1742152274830,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7aIronWomen"
+      },
+      {
+        "amount": 9000.0,
+        "timestamp": 1742153046902,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 105350.375,
+        "timestamp": 1742154621566,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 276725.0,
+        "timestamp": 1742154832672,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 113042.2,
+        "timestamp": 1742155981607,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7aIronWomen"
+      },
+      {
+        "amount": 77079.0,
+        "timestamp": 1742156148156,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 25000.0,
+        "timestamp": 1742156200440,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 50000.0,
+        "timestamp": 1742156253680,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7aIronWomen"
+      },
+      {
+        "amount": 20000.0,
+        "timestamp": 1742156658202,
+        "action": "WITHDRAW",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 125646.0,
+        "timestamp": 1742159103352,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7bMi1ord"
+      },
+      {
+        "amount": 4415.354499999987,
+        "timestamp": 1742184131740,
+        "action": "DEPOSIT",
+        "initiator_name": "Bank Interest"
+      },
+      {
+        "amount": 344.0,
+        "timestamp": 1742230822313,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7aIronWomen"
+      },
+      {
+        "amount": 177140.0,
+        "timestamp": 1742272265528,
+        "action": "DEPOSIT",
+        "initiator_name": "\u00a7bMi1ord"
+      }
+    ]
+  }
+}
