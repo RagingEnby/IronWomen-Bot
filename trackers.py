@@ -165,8 +165,10 @@ class TrackerCog(commands.Cog):
         await asyncio.gather(
             #self.save_profile(profile),
             utils.write_json('storage/profile.json', profile, 2),
+            SkillTracker.on_profile_update(profile),
+            CollectionTracker.on_profile_update(profile),
             LevelTracker.on_profile_update(profile),
-            BankTracker.on_profile_update(profile)
+            BankTracker.on_profile_update(profile),
         )
 
     @commands.Cog.listener()
