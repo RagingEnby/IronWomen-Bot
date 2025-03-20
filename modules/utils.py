@@ -37,3 +37,8 @@ def dict_diff(d1: dict, d2: dict) -> dict:
             elif d2[key] != d1[key]:
                 diff[key] = d2[key]
     return diff
+
+
+def commaize(number: int) -> str:
+    return '{:,}'.format(round(number, 2))
+    

@@ -28,7 +28,7 @@ class BankTracker:
             color = disnake.Color.gold()
         embed = disnake.Embed(
             color=color,
-            description=f"**Bank Balance:**\n`{round(before_balance, 2)}` :arrow_right: `{round(balance, 2)}`"
+            description=f"**Bank Balance:**\n`{utils.commaize(before_balance)}` :arrow_right: `{utils.commaize(balance)}`"
         )
         embed.set_author(
             icon_url=player.avatar if player else config.STEVE_AVATAR,
