@@ -39,6 +39,6 @@ def dict_diff(d1: dict, d2: dict) -> dict:
     return diff
 
 
-def commaize(number: int) -> str:
+def commaize(number: int | float) -> str:
     return '{:,}'.format(round(number, 2))
     
