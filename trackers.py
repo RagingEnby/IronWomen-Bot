@@ -12,6 +12,33 @@ RUNNING: bool = False
 TASK: Optional[asyncio.Task] = None
 
 
+class SkillTracker:
+    skill_manager = datamanager.JsonWrapper('storage/skills.json')
+
+    @staticmethod
+    async def on_skill_update(skill: str, uuid: str, before: int, after: int):
+        player = await mojang.get(uuid)
+        embed = disnake.Embed(
+            color=disnake.Color.green(),
+            description=f"`{before}` :arrow_right: `{after}`",
+            timestamp=datetime.now()
+        )
+        player.set_author(embed=embed, text=f"Leveled Up {skill.title()}!")
+        await utils.send_to_channel(config.SKILL_CHANNEL_ID, embed=embed)
+
+    @staticmethod
+    async def on_profile_update(profile: dict[str, Any]):
+        for uuid, member in profile.get('members', {}).items():
+            for skill, exp in member.get('player_data', {}).get('experience', {}).items():
+                lvl = hypixel.calculate_skill(skill, exp)
+                before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0):
+                if lvl != before:
+                    if uuid not in SkillTracker.skill_manager:
+                        SkillTracker.skill_manager[uuid] = {}
+                    SkillTracker.skill_manager[uuid][skill] = lvl
+        await SkillTracker.skill_manager.save()
+
+
 class CollectionTracker:
     collection_manager = datamanager.JsonWrapper('storage/collection.json')
 
@@ -43,6 +70,8 @@ class CollectionTracker:
                     before=before,
                     after=lvl
                 )
+                CollectionTracker.collection_manager[collection] = lvl
+        await CollectionTracker.collection_manager.save()
 
 
 class BankTracker:

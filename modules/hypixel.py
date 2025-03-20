@@ -6,6 +6,10 @@ from modules import asyncreqs
 
 import config
 
+SKILL_BRACKETS: dict[str, list[int]] = {
+    skill: [level['totalExpRequired']
+    for level in data['levels']] for skill, data in config.SKILL_DATA.items()
+}
 COLLECTION_BRACKETS: dict[str, list[int]] = {
     collection_id: [
         tier['amountRequired']
@@ -15,7 +19,6 @@ COLLECTION_BRACKETS: dict[str, list[int]] = {
     for collection_id, data in category['items'].items()
 }
 
-
 async def get(endpoint: str, **kwargs) -> dict[str, Any]:
     params = {"key": config.HYPIXEL_API_KEY}
     params.update(kwargs)
@@ -23,7 +26,8 @@ async def get(endpoint: str, **kwargs) -> dict[str, Any]:
         f"https://api.hypixel.net/v2{endpoint}",
         params=params
     )
-    print('GET', response.status, endpoint)
+    if response.status != 200:
+        print('GET', response.status, endpoint)
     if response.status == 429:
         await asyncio.sleep(10)
         return await get(endpoint, **kwargs)
@@ -33,6 +37,18 @@ async def get(endpoint: str, **kwargs) -> dict[str, Any]:
 async def get_profile() -> dict[str, Any]:
     profile = await get("/skyblock/profile", profile=config.PROFILE_ID)
     return profile.get('profile', {})
+
+
+def calculate_skill(skill: str, exp: int) -> int:
+    if skill not in SKILL_BRACKETS:
+        raise ValueError(skill)
+    brackets = SKILL_BRACKETS[skill]
+    lvl = 0
+    for bracket in brackets:
+        if exp < bracket:
+            break
+        lvl += 1
+    return lvl
 
 
 def calculate_collection(collection: str, collected: int) -> int:
