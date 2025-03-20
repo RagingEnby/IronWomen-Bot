@@ -32,7 +32,7 @@ class BankTracker:
         )
         embed.set_author(
             icon_url=player.avatar if player else config.STEVE_AVATAR,
-            name=f"{player.name if player else name} {verb} {amount} coins"
+            name=f"{player.name if player else name} {verb} {utils.commaize(amount)} coins"
         )
         await utils.send_to_channel(config.BANK_CHANNEL_ID, embed=embed)
     
