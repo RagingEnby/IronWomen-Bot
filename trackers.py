@@ -3,12 +3,46 @@ from disnake.ext import commands, tasks
 import asyncio
 import disnake
 from typing import Optional, Any
+from datetime import datetime
 
 from modules import hypixel, datamanager, utils, mojang
 import config
 
 RUNNING: bool = False
 TASK: Optional[asyncio.Task] = None
+
+
+class CollectionTracker:
+    collection_manager = datamanager.JsonWrapper('storage/collection.json')
+
+    @staticmethod
+    async def on_collection_update(collection: str, before: int, after: int):
+        embed = disnake.Embed(
+            color=disnake.Color.green(),
+            description=f"`{before}` :arrow_right: `{after}`",
+            timestamp=datetime.now()
+        )
+        embed.set_author(
+            icon_url="https://sky.shiiyu.moe/item/" + collection.upper(),
+            name=f"{collection.title()} Collection Leveled Up!"
+        )
+        await utils.send_to_channel(config.COLLECTION_CHANNEL_ID, embed=embed)
+
+
+    @staticmethod
+    async def on_profile_update(profile: dict[str, Any]):
+        for collection in hypixel.COLLECTION_BRACKETS:
+            collected = 0
+            for member in profile.get('members', {}).values():
+                collected += member.get('collections', {}).get(collection, 0)
+            lvl = hypixel.calculate_collection(collection, collected)
+            before = CollectionTracker.collection_manager.get(collection, 0)
+            if lvl != before:
+                await CollectionTracker.on_collection_update(
+                    collection=collection,
+                    before=before,
+                    after=lvl
+                )
 
 
 class BankTracker:
@@ -19,7 +53,7 @@ class BankTracker:
     transaction_manager = datamanager.JsonWrapper('storage/transactions.json')
 
     @staticmethod
-    async def on_transaction(balance: int, amount: float, timestamp: int, action: str, name: str):
+    async def on_transaction(balance: int | float, amount: float, timestamp: int, action: str, name: str):
         player = await mojang.get(name) if name != "Bank Interest" else None
         before_balance = balance - amount if action == "DEPOSIT" else balance + amount
         verb = BankTracker.action_verbs[action]
@@ -28,7 +62,8 @@ class BankTracker:
             color = disnake.Color.gold()
         embed = disnake.Embed(
             color=color,
-            description=f"**Bank Balance:**\n`{utils.commaize(before_balance)}` :arrow_right: `{utils.commaize(balance)}`"
+            description=f"**Bank Balance:**\n`{utils.commaize(before_balance)}` :arrow_right: `{utils.commaize(balance)}`",
+            timestamp=datetime.fromtimestamp(timestamp)
         )
         embed.set_author(
             icon_url=player.avatar if player else config.STEVE_AVATAR,
@@ -109,4 +144,3 @@ class TrackerCog(commands.Cog):
     async def on_ready(self):
         print('TrackerCog.on_ready()')
         self.profile_tracker_task.start()
-        
