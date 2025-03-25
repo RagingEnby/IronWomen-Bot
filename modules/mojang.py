@@ -40,6 +40,8 @@ async def get(identifier: str) -> MojangPlayer:
     url = "https://api.ragingenby.dev/player/" + identifier
     response = await asyncreqs.get(url)
     data = await response.json()
-    CACHE[identifier] = MojangPlayer.from_dict(data)
-    return CACHE[identifier]
+    player = MojangPlayer.from_dict(data)
+    CACHE[player.name.lower()] = player
+    CACHE[player.uuid] = player
+    return player
     
