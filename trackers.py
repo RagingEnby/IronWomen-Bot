@@ -35,6 +35,7 @@ class SkillTracker:
                 lvl = hypixel.calculate_skill(skill.replace('SKILL_', ''), exp)
                 before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
                 if lvl != before:
+                    print(f'[{uuid}] SKILL ({skill}) UPDATE: {before} -> {lvl}')
                     await SkillTracker.on_skill_update(skill, uuid, before, lvl)
                     if uuid not in SkillTracker.skill_manager:
                         SkillTracker.skill_manager[uuid] = {}
