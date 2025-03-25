@@ -28,32 +28,26 @@ class SkillTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        try:
-            for uuid, member in profile.get('members', {}).items():
-                print(f"[DEBUG] SkillTracker: Processing member {uuid}")
-                experience_data = member.get('player_data', {}).get('experience', {})
-                print(f"[DEBUG] SkillTracker: Found {len(experience_data)} skill entries")
-                
-                for skill, exp in experience_data.items():
-                    skill_name = skill.replace('SKILL_', '')
-                    print(f"[DEBUG] SkillTracker: Processing skill {skill_name} with exp {exp}")
-                    lvl = hypixel.calculate_skill(skill_name, exp)
-                    print(f"[DEBUG] SkillTracker: Calculated level {lvl} for {skill_name}")
-                    
-                    before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
-                    if lvl != before:
-                        print(f"[DEBUG] SkillTracker: Level change detected for {skill_name}: {before} -> {lvl}")
-                        if uuid not in SkillTracker.skill_manager:
-                            SkillTracker.skill_manager[uuid] = {}
-                        SkillTracker.skill_manager[uuid][skill] = lvl
+        for uuid, member in profile.get('members', {}).items():
+            print(f"[DEBUG] SkillTracker: Processing member {uuid}")
+            experience_data = member.get('player_data', {}).get('experience', {})
+            print(f"[DEBUG] SkillTracker: Found {len(experience_data)} skill entries")
             
-            print("[DEBUG] SkillTracker: Saving skill manager data")
-            await SkillTracker.skill_manager.save()
-            print("[DEBUG] SkillTracker: Data saved successfully")
-        except Exception as e:
-            print(f"[ERROR] SkillTracker: Fatal error in on_profile_update: {str(e)}")
-            import traceback
-            traceback.print_exc()
+            for skill, exp in experience_data.items():
+                skill_name = skill.replace('SKILL_', '')
+                print(f"[DEBUG] SkillTracker: Processing skill {skill_name} with exp {exp}")
+                lvl = hypixel.calculate_skill(skill_name, exp)
+                print(f"[DEBUG] SkillTracker: Calculated level {lvl} for {skill_name}")
+                
+                before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
+                if lvl != before:
+                    print(f"[DEBUG] SkillTracker: Level change detected for {skill_name}: {before} -> {lvl}")
+                    if uuid not in SkillTracker.skill_manager:
+                        SkillTracker.skill_manager[uuid] = {}
+                    SkillTracker.skill_manager[uuid][skill] = lvl
+            
+        print("[DEBUG] SkillTracker: Saving skill manager data")
+        await SkillTracker.skill_manager.save()
 
 
 class CollectionTracker:
@@ -180,48 +174,17 @@ class TrackerCog(commands.Cog):
         self.bot = bot
         self.last_profile = {}
 
-    """
-    async def save_profile(self, profile: dict):
-        diff_data = utils.dict_diff(self.last_profile, profile)
-        self.last_profile = profile
-        await asyncio.gather(
-            utils.write_json('storage/profile.json', profile, 2),
-            utils.write_json(f"storage/history/{int(time.time())}.json", diff_data, None),
-            utils.write_json("storage/diff.json", diff_data, 2)
-        )
-    """
-
     @tasks.loop(seconds=15)
     async def profile_tracker_task(self):
-        try:
-            print("[DEBUG] TrackerCog: Fetching profile data")
-            profile = await hypixel.get_profile()
-            print("[DEBUG] TrackerCog: Profile data received")
-            
-            print("[DEBUG] TrackerCog: Starting all trackers")
-            tasks = [
-                utils.write_json('storage/profile.json', profile, 2),
-                SkillTracker.on_profile_update(profile),
-                CollectionTracker.on_profile_update(profile),
-                LevelTracker.on_profile_update(profile),
-                BankTracker.on_profile_update(profile),
-            ]
-            
-            # Run all tasks but handle errors individually
-            results = await asyncio.gather(*tasks, return_exceptions=True)
-            
-            # Check for exceptions
-            for i, result in enumerate(results):
-                if isinstance(result, Exception):
-                    print(f"[ERROR] TrackerCog: Task {i} failed with error: {str(result)}")
-                    import traceback
-                    traceback.print_exc()
-            
-            print("[DEBUG] TrackerCog: Profile update complete")
-        except Exception as e:
-            print(f"[ERROR] TrackerCog: Fatal error in profile_tracker_task: {str(e)}")
-            import traceback
-            traceback.print_exc()
+        profile = await hypixel.get_profile()
+        await asyncio.gather(*[
+            utils.write_json('storage/profile.json', profile, 2),
+            SkillTracker.on_profile_update(profile),
+            CollectionTracker.on_profile_update(profile),
+            LevelTracker.on_profile_update(profile),
+            BankTracker.on_profile_update(profile),
+        ])
+        
 
     @commands.Cog.listener()
     async def on_ready(self):
