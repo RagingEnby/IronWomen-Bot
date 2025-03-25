@@ -23,7 +23,7 @@ class SkillTracker:
             description=f"`{before}` :arrow_right: `{after}`",
             timestamp=datetime.now()
         )
-        player.set_author(embed=embed, text=f"Leveled Up {skill.title()}!")
+        player.set_author(embed=embed, text=f"Leveled Up {skill.replace('SKILL_', '').title()}!")
         await utils.send_to_channel(config.SKILL_CHANNEL_ID, embed=embed)
 
     @staticmethod
