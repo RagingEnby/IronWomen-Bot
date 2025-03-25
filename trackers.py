@@ -28,7 +28,6 @@ class SkillTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-
         for uuid, member in profile.get('members', {}).items():
             for skill, exp in member.get('player_data', {}).get('experience', {}).items():
                 lvl = hypixel.calculate_skill(skill.replace('SKILL_', ''), exp)
