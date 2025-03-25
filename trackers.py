@@ -28,15 +28,39 @@ class SkillTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        for uuid, member in profile.get('members', {}).items():
-            for skill, exp in member.get('player_data', {}).get('experience', {}).items():
-                lvl = hypixel.calculate_skill(skill.replace('SKILL_', ''), exp)
-                before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
-                if lvl != before:
-                    if uuid not in SkillTracker.skill_manager:
-                        SkillTracker.skill_manager[uuid] = {}
-                    SkillTracker.skill_manager[uuid][skill] = lvl
-        await SkillTracker.skill_manager.save()
+        print(f"[DEBUG] SkillTracker: Processing profile update")
+        try:
+            for uuid, member in profile.get('members', {}).items():
+                print(f"[DEBUG] SkillTracker: Processing member {uuid}")
+                try:
+                    experience_data = member.get('player_data', {}).get('experience', {})
+                    print(f"[DEBUG] SkillTracker: Found {len(experience_data)} skill entries")
+                    
+                    for skill, exp in experience_data.items():
+                        try:
+                            skill_name = skill.replace('SKILL_', '')
+                            print(f"[DEBUG] SkillTracker: Processing skill {skill_name} with exp {exp}")
+                            lvl = hypixel.calculate_skill(skill_name, exp)
+                            print(f"[DEBUG] SkillTracker: Calculated level {lvl} for {skill_name}")
+                            
+                            before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
+                            if lvl != before:
+                                print(f"[DEBUG] SkillTracker: Level change detected for {skill_name}: {before} -> {lvl}")
+                                if uuid not in SkillTracker.skill_manager:
+                                    SkillTracker.skill_manager[uuid] = {}
+                                SkillTracker.skill_manager[uuid][skill] = lvl
+                        except Exception as e:
+                            print(f"[ERROR] SkillTracker: Error processing skill {skill}: {str(e)}")
+                except Exception as e:
+                    print(f"[ERROR] SkillTracker: Error processing member {uuid}: {str(e)}")
+            
+            print("[DEBUG] SkillTracker: Saving skill manager data")
+            await SkillTracker.skill_manager.save()
+            print("[DEBUG] SkillTracker: Data saved successfully")
+        except Exception as e:
+            print(f"[ERROR] SkillTracker: Fatal error in on_profile_update: {str(e)}")
+            import traceback
+            traceback.print_exc()
 
 
 class CollectionTracker:
@@ -58,20 +82,47 @@ class CollectionTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        for collection in hypixel.COLLECTION_BRACKETS:
-            collected = 0
-            for member in profile.get('members', {}).values():
-                collected += member.get('collections', {}).get(collection, 0)
-            lvl = hypixel.calculate_collection(collection, collected)
-            before = CollectionTracker.collection_manager.get(collection, 0)
-            if lvl != before:
-                await CollectionTracker.on_collection_update(
-                    collection=collection,
-                    before=before,
-                    after=lvl
-                )
-                CollectionTracker.collection_manager[collection] = lvl
-        await CollectionTracker.collection_manager.save()
+        print(f"[DEBUG] CollectionTracker: Processing profile update")
+        try:
+            collection_count = len(hypixel.COLLECTION_BRACKETS)
+            print(f"[DEBUG] CollectionTracker: Processing {collection_count} collections")
+            
+            for collection in hypixel.COLLECTION_BRACKETS:
+                try:
+                    print(f"[DEBUG] CollectionTracker: Processing collection {collection}")
+                    collected = 0
+                    
+                    for member_id, member in profile.get('members', {}).items():
+                        try:
+                            member_collection = member.get('collection', {}).get(collection, 0)
+                            print(f"[DEBUG] CollectionTracker: Member {member_id} has {member_collection} of {collection}")
+                            collected += member_collection
+                        except Exception as e:
+                            print(f"[ERROR] CollectionTracker: Error processing member {member_id} for collection {collection}: {str(e)}")
+                    
+                    print(f"[DEBUG] CollectionTracker: Total collected for {collection}: {collected}")
+                    lvl = hypixel.calculate_collection(collection, collected)
+                    print(f"[DEBUG] CollectionTracker: Calculated level {lvl} for {collection}")
+                    
+                    before = CollectionTracker.collection_manager.get(collection, 0)
+                    if lvl != before:
+                        print(f"[DEBUG] CollectionTracker: Level change detected for {collection}: {before} -> {lvl}")
+                        await CollectionTracker.on_collection_update(
+                            collection=collection,
+                            before=before,
+                            after=lvl
+                        )
+                        CollectionTracker.collection_manager[collection] = lvl
+                except Exception as e:
+                    print(f"[ERROR] CollectionTracker: Error processing collection {collection}: {str(e)}")
+            
+            print("[DEBUG] CollectionTracker: Saving collection manager data")
+            await CollectionTracker.collection_manager.save()
+            print("[DEBUG] CollectionTracker: Data saved successfully")
+        except Exception as e:
+            print(f"[ERROR] CollectionTracker: Fatal error in on_profile_update: {str(e)}")
+            import traceback
+            traceback.print_exc()
 
 
 class BankTracker:
@@ -160,16 +211,35 @@ class TrackerCog(commands.Cog):
 
     @tasks.loop(seconds=15)
     async def profile_tracker_task(self):
-        profile = await hypixel.get_profile()
-        
-        await asyncio.gather(
-            #self.save_profile(profile),
-            utils.write_json('storage/profile.json', profile, 2),
-            SkillTracker.on_profile_update(profile),
-            CollectionTracker.on_profile_update(profile),
-            LevelTracker.on_profile_update(profile),
-            BankTracker.on_profile_update(profile),
-        )
+        try:
+            print("[DEBUG] TrackerCog: Fetching profile data")
+            profile = await hypixel.get_profile()
+            print("[DEBUG] TrackerCog: Profile data received")
+            
+            print("[DEBUG] TrackerCog: Starting all trackers")
+            tasks = [
+                utils.write_json('storage/profile.json', profile, 2),
+                SkillTracker.on_profile_update(profile),
+                CollectionTracker.on_profile_update(profile),
+                LevelTracker.on_profile_update(profile),
+                BankTracker.on_profile_update(profile),
+            ]
+            
+            # Run all tasks but handle errors individually
+            results = await asyncio.gather(*tasks, return_exceptions=True)
+            
+            # Check for exceptions
+            for i, result in enumerate(results):
+                if isinstance(result, Exception):
+                    print(f"[ERROR] TrackerCog: Task {i} failed with error: {str(result)}")
+                    import traceback
+                    traceback.print_exc()
+            
+            print("[DEBUG] TrackerCog: Profile update complete")
+        except Exception as e:
+            print(f"[ERROR] TrackerCog: Fatal error in profile_tracker_task: {str(e)}")
+            import traceback
+            traceback.print_exc()
 
     @commands.Cog.listener()
     async def on_ready(self):
