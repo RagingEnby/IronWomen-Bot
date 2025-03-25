@@ -34,14 +34,13 @@ class SkillTracker:
             print(f"[DEBUG] SkillTracker: Found {len(experience_data)} skill entries")
             
             for skill, exp in experience_data.items():
-                skill_name = skill.replace('SKILL_', '')
-                print(f"[DEBUG] SkillTracker: Processing skill {skill_name} with exp {exp}")
-                lvl = hypixel.calculate_skill(skill_name, exp)
-                print(f"[DEBUG] SkillTracker: Calculated level {lvl} for {skill_name}")
+                print(f"[DEBUG] SkillTracker: Processing skill {skill} with exp {exp}")
+                lvl = hypixel.calculate_skill(skill.replace('SKILL_', ''), exp)
+                print(f"[DEBUG] SkillTracker: Calculated level {lvl} for {skill}")
                 
                 before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
                 if lvl != before:
-                    print(f"[DEBUG] SkillTracker: Level change detected for {skill_name}: {before} -> {lvl}")
+                    print(f"[DEBUG] SkillTracker: Level change detected for {skill}: {before} -> {lvl}")
                     if uuid not in SkillTracker.skill_manager:
                         SkillTracker.skill_manager[uuid] = {}
                     SkillTracker.skill_manager[uuid][skill] = lvl
@@ -69,7 +68,6 @@ class CollectionTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        collection_count = len(hypixel.COLLECTION_BRACKETS)
         for collection in hypixel.COLLECTION_BRACKETS:
             collected = 0
             for member_id, member in profile.get('members', {}).items():
