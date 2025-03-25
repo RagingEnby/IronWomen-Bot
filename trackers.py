@@ -3,12 +3,75 @@ from disnake.ext import commands, tasks
 import asyncio
 import disnake
 from typing import Optional, Any
+from datetime import datetime
 
 from modules import hypixel, datamanager, utils, mojang
 import config
 
 RUNNING: bool = False
 TASK: Optional[asyncio.Task] = None
+
+
+class SkillTracker:
+    skill_manager = datamanager.JsonWrapper('storage/skills.json')
+
+    @staticmethod
+    async def on_skill_update(skill: str, uuid: str, before: int, after: int):
+        player = await mojang.get(uuid)
+        embed = disnake.Embed(
+            color=disnake.Color.green(),
+            description=f"`{before}` :arrow_right: `{after}`",
+            timestamp=datetime.now()
+        )
+        player.set_author(embed=embed, text=f"Leveled Up {skill.title()}!")
+        await utils.send_to_channel(config.SKILL_CHANNEL_ID, embed=embed)
+
+    @staticmethod
+    async def on_profile_update(profile: dict[str, Any]):
+        for uuid, member in profile.get('members', {}).items():
+            for skill, exp in member.get('player_data', {}).get('experience', {}).items():
+                lvl = hypixel.calculate_skill(skill, exp)
+                before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0):
+                if lvl != before:
+                    if uuid not in SkillTracker.skill_manager:
+                        SkillTracker.skill_manager[uuid] = {}
+                    SkillTracker.skill_manager[uuid][skill] = lvl
+        await SkillTracker.skill_manager.save()
+
+
+class CollectionTracker:
+    collection_manager = datamanager.JsonWrapper('storage/collection.json')
+
+    @staticmethod
+    async def on_collection_update(collection: str, before: int, after: int):
+        embed = disnake.Embed(
+            color=disnake.Color.green(),
+            description=f"`{before}` :arrow_right: `{after}`",
+            timestamp=datetime.now()
+        )
+        embed.set_author(
+            icon_url="https://sky.shiiyu.moe/item/" + collection.upper(),
+            name=f"{collection.title()} Collection Leveled Up!"
+        )
+        await utils.send_to_channel(config.COLLECTION_CHANNEL_ID, embed=embed)
+
+
+    @staticmethod
+    async def on_profile_update(profile: dict[str, Any]):
+        for collection in hypixel.COLLECTION_BRACKETS:
+            collected = 0
+            for member in profile.get('members', {}).values():
+                collected += member.get('collections', {}).get(collection, 0)
+            lvl = hypixel.calculate_collection(collection, collected)
+            before = CollectionTracker.collection_manager.get(collection, 0)
+            if lvl != before:
+                await CollectionTracker.on_collection_update(
+                    collection=collection,
+                    before=before,
+                    after=lvl
+                )
+                CollectionTracker.collection_manager[collection] = lvl
+        await CollectionTracker.collection_manager.save()
 
 
 class BankTracker:
@@ -19,7 +82,7 @@ class BankTracker:
     transaction_manager = datamanager.JsonWrapper('storage/transactions.json')
 
     @staticmethod
-    async def on_transaction(balance: int, amount: float, timestamp: int, action: str, name: str):
+    async def on_transaction(balance: int | float, amount: float, timestamp: int, action: str, name: str):
         player = await mojang.get(name) if name != "Bank Interest" else None
         before_balance = balance - amount if action == "DEPOSIT" else balance + amount
         verb = BankTracker.action_verbs[action]
@@ -28,11 +91,12 @@ class BankTracker:
             color = disnake.Color.gold()
         embed = disnake.Embed(
             color=color,
-            description=f"**Bank Balance:**\n`{utils.commaize(before_balance)}` :arrow_right: `{utils.commaize(balance)}`"
+            description=f"**Bank Balance:**\n`{utils.commaize(before_balance)}` :arrow_right: `{utils.commaize(balance)}`",
+            timestamp=datetime.fromtimestamp(timestamp)
         )
         embed.set_author(
             icon_url=player.avatar if player else config.STEVE_AVATAR,
-            name=f"{player.name if player else name} {verb} {amount} coins"
+            name=f"{player.name if player else name} {verb} {utils.commaize(amount)} coins"
         )
         await utils.send_to_channel(config.BANK_CHANNEL_ID, embed=embed)
     
@@ -101,12 +165,13 @@ class TrackerCog(commands.Cog):
         await asyncio.gather(
             #self.save_profile(profile),
             utils.write_json('storage/profile.json', profile, 2),
+            SkillTracker.on_profile_update(profile),
+            CollectionTracker.on_profile_update(profile),
             LevelTracker.on_profile_update(profile),
-            BankTracker.on_profile_update(profile)
+            BankTracker.on_profile_update(profile),
         )
 
     @commands.Cog.listener()
     async def on_ready(self):
         print('TrackerCog.on_ready()')
         self.profile_tracker_task.start()
-        
