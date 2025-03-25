@@ -22,6 +22,9 @@ class JsonWrapper:
     def __delitem__(self, key: str):
         del self.data[key]
 
+    def __contains__(self, key: str) -> bool:
+        return key in self.data
+
     def get(self, key: str, default: Any = None) -> Any:
         return self.data.get(key, default)
 
