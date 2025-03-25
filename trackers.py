@@ -31,7 +31,7 @@ class SkillTracker:
 
         for uuid, member in profile.get('members', {}).items():
             for skill, exp in member.get('player_data', {}).get('experience', {}).items():
-                lvl = hypixel.calculate_skill(skill, exp)
+                lvl = hypixel.calculate_skill(skill.replace('SKILL_', ''), exp)
                 before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
                 if lvl != before:
                     if uuid not in SkillTracker.skill_manager:
