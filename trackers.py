@@ -69,36 +69,22 @@ class CollectionTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        print(f"[DEBUG] CollectionTracker: Processing profile update")
         collection_count = len(hypixel.COLLECTION_BRACKETS)
-        print(f"[DEBUG] CollectionTracker: Processing {collection_count} collections")
-        
         for collection in hypixel.COLLECTION_BRACKETS:
-            print(f"[DEBUG] CollectionTracker: Processing collection {collection}")
             collected = 0
-            
             for member_id, member in profile.get('members', {}).items():
                 member_collection = member.get('collection', {}).get(collection, 0)
-                print(f"[DEBUG] CollectionTracker: Member {member_id} has {member_collection} of {collection}")
                 collected += member_collection
-            
-            print(f"[DEBUG] CollectionTracker: Total collected for {collection}: {collected}")
             lvl = hypixel.calculate_collection(collection, collected)
-            print(f"[DEBUG] CollectionTracker: Calculated level {lvl} for {collection}")
-            
             before = CollectionTracker.collection_manager.get(collection, 0)
             if lvl != before:
-                print(f"[DEBUG] CollectionTracker: Level change detected for {collection}: {before} -> {lvl}")
                 await CollectionTracker.on_collection_update(
                     collection=collection,
                     before=before,
                     after=lvl
                 )
                 CollectionTracker.collection_manager[collection] = lvl
-        
-        print("[DEBUG] CollectionTracker: Saving collection manager data")
         await CollectionTracker.collection_manager.save()
-        print("[DEBUG] CollectionTracker: Data saved successfully")
 
 
 class BankTracker:
