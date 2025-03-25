@@ -4,7 +4,8 @@ from typing import Any
 # Hypixel
 PROFILE_ID: str = "9c2dfcc9-5745-41d3-8932-998813bedbca"
 ## Secrets
-HYPIXEL_API_KEY: str = "15ce4c9a-a68e-4387-a818-92facb410378"
+HYPIXEL_API_KEY: str = "858d1591-87d2-4f75-bae8-da89e9b863ec"
+# HYPIXEL_API_KEY: str = "60cb3fcd-2a6a-4b3d-8c95-6174fab46857" # prod key, not yet enabled
 ## Experience Brackets
 SKILL_DATA: dict[str, dict[str, Any]] = requests.get('https://api.hypixel.net/v2/resources/skyblock/skills').json()['skills']
 
