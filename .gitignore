@@ -163,3 +163,4 @@ generated-icon.png
 .replit
 pyproject.toml
 uv.lock
+attached_assets/*

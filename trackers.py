@@ -28,31 +28,24 @@ class SkillTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        print(f"[DEBUG] SkillTracker: Processing profile update")
         try:
             for uuid, member in profile.get('members', {}).items():
                 print(f"[DEBUG] SkillTracker: Processing member {uuid}")
-                try:
-                    experience_data = member.get('player_data', {}).get('experience', {})
-                    print(f"[DEBUG] SkillTracker: Found {len(experience_data)} skill entries")
+                experience_data = member.get('player_data', {}).get('experience', {})
+                print(f"[DEBUG] SkillTracker: Found {len(experience_data)} skill entries")
+                
+                for skill, exp in experience_data.items():
+                    skill_name = skill.replace('SKILL_', '')
+                    print(f"[DEBUG] SkillTracker: Processing skill {skill_name} with exp {exp}")
+                    lvl = hypixel.calculate_skill(skill_name, exp)
+                    print(f"[DEBUG] SkillTracker: Calculated level {lvl} for {skill_name}")
                     
-                    for skill, exp in experience_data.items():
-                        try:
-                            skill_name = skill.replace('SKILL_', '')
-                            print(f"[DEBUG] SkillTracker: Processing skill {skill_name} with exp {exp}")
-                            lvl = hypixel.calculate_skill(skill_name, exp)
-                            print(f"[DEBUG] SkillTracker: Calculated level {lvl} for {skill_name}")
-                            
-                            before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
-                            if lvl != before:
-                                print(f"[DEBUG] SkillTracker: Level change detected for {skill_name}: {before} -> {lvl}")
-                                if uuid not in SkillTracker.skill_manager:
-                                    SkillTracker.skill_manager[uuid] = {}
-                                SkillTracker.skill_manager[uuid][skill] = lvl
-                        except Exception as e:
-                            print(f"[ERROR] SkillTracker: Error processing skill {skill}: {str(e)}")
-                except Exception as e:
-                    print(f"[ERROR] SkillTracker: Error processing member {uuid}: {str(e)}")
+                    before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
+                    if lvl != before:
+                        print(f"[DEBUG] SkillTracker: Level change detected for {skill_name}: {before} -> {lvl}")
+                        if uuid not in SkillTracker.skill_manager:
+                            SkillTracker.skill_manager[uuid] = {}
+                        SkillTracker.skill_manager[uuid][skill] = lvl
             
             print("[DEBUG] SkillTracker: Saving skill manager data")
             await SkillTracker.skill_manager.save()
@@ -83,46 +76,36 @@ class CollectionTracker:
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
         print(f"[DEBUG] CollectionTracker: Processing profile update")
-        try:
-            collection_count = len(hypixel.COLLECTION_BRACKETS)
-            print(f"[DEBUG] CollectionTracker: Processing {collection_count} collections")
+        collection_count = len(hypixel.COLLECTION_BRACKETS)
+        print(f"[DEBUG] CollectionTracker: Processing {collection_count} collections")
+        
+        for collection in hypixel.COLLECTION_BRACKETS:
+            print(f"[DEBUG] CollectionTracker: Processing collection {collection}")
+            collected = 0
             
-            for collection in hypixel.COLLECTION_BRACKETS:
-                try:
-                    print(f"[DEBUG] CollectionTracker: Processing collection {collection}")
-                    collected = 0
-                    
-                    for member_id, member in profile.get('members', {}).items():
-                        try:
-                            member_collection = member.get('collection', {}).get(collection, 0)
-                            print(f"[DEBUG] CollectionTracker: Member {member_id} has {member_collection} of {collection}")
-                            collected += member_collection
-                        except Exception as e:
-                            print(f"[ERROR] CollectionTracker: Error processing member {member_id} for collection {collection}: {str(e)}")
-                    
-                    print(f"[DEBUG] CollectionTracker: Total collected for {collection}: {collected}")
-                    lvl = hypixel.calculate_collection(collection, collected)
-                    print(f"[DEBUG] CollectionTracker: Calculated level {lvl} for {collection}")
-                    
-                    before = CollectionTracker.collection_manager.get(collection, 0)
-                    if lvl != before:
-                        print(f"[DEBUG] CollectionTracker: Level change detected for {collection}: {before} -> {lvl}")
-                        await CollectionTracker.on_collection_update(
-                            collection=collection,
-                            before=before,
-                            after=lvl
-                        )
-                        CollectionTracker.collection_manager[collection] = lvl
-                except Exception as e:
-                    print(f"[ERROR] CollectionTracker: Error processing collection {collection}: {str(e)}")
+            for member_id, member in profile.get('members', {}).items():
+                member_collection = member.get('collection', {}).get(collection, 0)
+                print(f"[DEBUG] CollectionTracker: Member {member_id} has {member_collection} of {collection}")
+                collected += member_collection
+                print(f"[ERROR] CollectionTracker: Error processing member {member_id} for collection {collection}: {str(e)}")
             
-            print("[DEBUG] CollectionTracker: Saving collection manager data")
-            await CollectionTracker.collection_manager.save()
-            print("[DEBUG] CollectionTracker: Data saved successfully")
-        except Exception as e:
-            print(f"[ERROR] CollectionTracker: Fatal error in on_profile_update: {str(e)}")
-            import traceback
-            traceback.print_exc()
+            print(f"[DEBUG] CollectionTracker: Total collected for {collection}: {collected}")
+            lvl = hypixel.calculate_collection(collection, collected)
+            print(f"[DEBUG] CollectionTracker: Calculated level {lvl} for {collection}")
+            
+            before = CollectionTracker.collection_manager.get(collection, 0)
+            if lvl != before:
+                print(f"[DEBUG] CollectionTracker: Level change detected for {collection}: {before} -> {lvl}")
+                await CollectionTracker.on_collection_update(
+                    collection=collection,
+                    before=before,
+                    after=lvl
+                )
+                CollectionTracker.collection_manager[collection] = lvl
+        
+        print("[DEBUG] CollectionTracker: Saving collection manager data")
+        await CollectionTracker.collection_manager.save()
+        print("[DEBUG] CollectionTracker: Data saved successfully")
 
 
 class BankTracker:
