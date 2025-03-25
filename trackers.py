@@ -155,20 +155,24 @@ class TrackerCog(commands.Cog):
     def __init__(self, bot: commands.InteractionBot):
         self.bot = bot
         self.last_profile = {}
+        self.task: Optional[asyncio.Task] = None
 
-    @tasks.loop(seconds=15)
-    async def profile_tracker_task(self):
-        profile = await hypixel.get_profile()
-        await asyncio.gather(*[
-            utils.write_json('storage/profile.json', profile, 2),
-            SkillTracker.on_profile_update(profile),
-            CollectionTracker.on_profile_update(profile),
-            LevelTracker.on_profile_update(profile),
-            BankTracker.on_profile_update(profile),
-        ])
-        
+    async def main(self):
+        while True:
+            profile = await hypixel.get_profile()
+            await asyncio.gather(*[
+                utils.write_json('storage/profile.json', profile, 2),
+                SkillTracker.on_profile_update(profile),
+                CollectionTracker.on_profile_update(profile),
+                LevelTracker.on_profile_update(profile),
+                BankTracker.on_profile_update(profile),
+            ])
+            await asyncio.sleep(15)
+            
 
     @commands.Cog.listener()
     async def on_ready(self):
         print('TrackerCog.on_ready()')
-        self.profile_tracker_task.start()
+        if self.task and not self.task.done():
+            self.task.cancel()
+        self.task = asyncio.create_task(self.main())
