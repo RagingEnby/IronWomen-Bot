@@ -28,10 +28,8 @@ class SkillTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        print('SkillTracker.on_profile_update()')
 
         for uuid, member in profile.get('members', {}).items():
-            print('SkillTracker uuid =', uuid)
             for skill, exp in member.get('player_data', {}).get('experience', {}).items():
                 lvl = hypixel.calculate_skill(skill, exp)
                 before = SkillTracker.skill_manager.get(uuid, {}).get(skill, 0)
@@ -61,14 +59,11 @@ class CollectionTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        print('CollectionTracker.on_profile_update()')
         for collection in hypixel.COLLECTION_BRACKETS:
-            print('CollectionTracker collection =', collection)
             collected = 0
             for member in profile.get('members', {}).values():
                 collected += member.get('collections', {}).get(collection, 0)
             lvl = hypixel.calculate_collection(collection, collected)
-            print(member, collection, lvl)
             before = CollectionTracker.collection_manager.get(collection, 0)
             if lvl != before:
                 await CollectionTracker.on_collection_update(
