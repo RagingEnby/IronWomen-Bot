@@ -87,7 +87,6 @@ class CollectionTracker:
                 member_collection = member.get('collection', {}).get(collection, 0)
                 print(f"[DEBUG] CollectionTracker: Member {member_id} has {member_collection} of {collection}")
                 collected += member_collection
-                print(f"[ERROR] CollectionTracker: Error processing member {member_id} for collection {collection}: {str(e)}")
             
             print(f"[DEBUG] CollectionTracker: Total collected for {collection}: {collected}")
             lvl = hypixel.calculate_collection(collection, collected)
