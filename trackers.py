@@ -28,6 +28,7 @@ class SkillTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
+        print('SkillTracker.on_profile_update()')
         for uuid, member in profile.get('members', {}).items():
             experience_data = member.get('player_data', {}).get('experience', {})
             
@@ -62,6 +63,7 @@ class CollectionTracker:
 
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
+        print('CollectionTracker.on_profile_update()')
         for collection in hypixel.COLLECTION_BRACKETS:
             collected = 0
             for member_id, member in profile.get('members', {}).items():
@@ -107,6 +109,7 @@ class BankTracker:
     
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
+        print('BankTracker.on_profile_update()')
         for transaction in profile.get('banking', {}).get('transactions', []):
             existing_data = BankTracker.transaction_manager.get(str(transaction['timestamp']))
             if existing_data:
@@ -138,6 +141,7 @@ class LevelTracker:
     
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
+        print('BankTracker.LevelTracker()')
         for uuid, member in profile.get('members', {}).items():
             level = member.get('leveling', {}).get('experience', 0) // 100
             if level == LevelTracker.levels_manager.get(uuid, 0):
