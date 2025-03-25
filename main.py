@@ -26,9 +26,8 @@ async def on_close():
 @bot.event
 async def on_ready():
     def signal_handler(*_) -> None:
-        print("Received CTRL+C, shutting down...")
+        print("shutting down...")
         asyncio.create_task(on_close())
-        # Add a hook to stop the event loop after cleanup
         loop = asyncio.get_event_loop()
         loop.stop()
     signal.signal(signal.SIGINT, signal_handler)
