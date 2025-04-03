@@ -4,8 +4,7 @@ from typing import Any
 # Hypixel
 PROFILE_ID: str = "9c2dfcc9-5745-41d3-8932-998813bedbca"
 ## Secrets
-HYPIXEL_API_KEY: str = "5968deb0-074e-42cc-8572-bfb6181b9562"
-# HYPIXEL_API_KEY: str = "60cb3fcd-2a6a-4b3d-8c95-6174fab46857" # prod key, not yet enabled
+HYPIXEL_API_KEY: str = "60cb3fcd-2a6a-4b3d-8c95-6174fab46857"
 ## API Data
 SKILL_DATA: dict[str, dict[str, Any]] = requests.get('https://api.hypixel.net/v2/resources/skyblock/skills').json()['skills']
 COLLECTION_DATA: dict[str, dict[str, Any]] = requests.get('https://api.hypixel.net/v2/resources/skyblock/collections').json()['collections']
