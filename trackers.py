@@ -1,9 +1,9 @@
 from datetime import datetime
-from disnake.ext import commands, tasks
+from disnake.ext import commands
 import asyncio
 import disnake
 from typing import Optional, Any
-from datetime import datetime
+import traceback
 
 from modules import hypixel, datamanager, utils, mojang
 import config
@@ -159,15 +159,19 @@ class TrackerCog(commands.Cog):
 
     async def main(self):
         while True:
-            profile = await hypixel.get_profile()
-            await asyncio.gather(*[
-                utils.write_json('storage/profile.json', profile, 2),
-                SkillTracker.on_profile_update(profile),
-                CollectionTracker.on_profile_update(profile),
-                LevelTracker.on_profile_update(profile),
-                BankTracker.on_profile_update(profile),
-            ])
-            await asyncio.sleep(15)
+            try:
+                profile = await hypixel.get_profile()
+                await asyncio.gather(*[
+                    utils.write_json('storage/profile.json', profile, 2),
+                    SkillTracker.on_profile_update(profile),
+                    CollectionTracker.on_profile_update(profile),
+                    LevelTracker.on_profile_update(profile),
+                    BankTracker.on_profile_update(profile),
+                ])
+            except Exception as e:
+                print('TrackerCog.main() ERROR:', traceback.format_exc())
+            finally:
+                await asyncio.sleep(15)
             
 
     @commands.Cog.listener()
