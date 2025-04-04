@@ -8,6 +8,7 @@ async def get(*args, **kwargs) -> aiohttp.ClientResponse:
     global SESSION
     if not SESSION or SESSION.closed:
         SESSION = aiohttp.ClientSession()
-        return await get(*args, **kwargs)
-    return await SESSION.get(*args, **kwargs)
+    response = await SESSION.get(*args, **kwargs)
+    print(response.status, response.url)
+    return response
     
