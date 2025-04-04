@@ -99,7 +99,7 @@ class BankTracker:
         embed = disnake.Embed(
             color=color,
             description=f"**Bank Balance:**\n`{utils.commaize(before_balance)}` :arrow_right: `{utils.commaize(balance)}`",
-            timestamp=datetime.fromtimestamp(timestamp)
+            timestamp=datetime.fromtimestamp(timestamp // 1000)
         )
         embed.set_author(
             icon_url=player.avatar if player else config.STEVE_AVATAR,
