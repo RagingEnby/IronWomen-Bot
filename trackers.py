@@ -141,7 +141,7 @@ class LevelTracker:
     
     @staticmethod
     async def on_profile_update(profile: dict[str, Any]):
-        print('BankTracker.LevelTracker()')
+        print('LevelTracker.on_profile_update()')
         for uuid, member in profile.get('members', {}).items():
             level = member.get('leveling', {}).get('experience', 0) // 100
             if level == LevelTracker.levels_manager.get(uuid, 0):
